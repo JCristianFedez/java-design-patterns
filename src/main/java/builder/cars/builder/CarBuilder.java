@@ -24,8 +24,9 @@ public class CarBuilder implements Builder {
   }
 
   @Override
-  public void setCarType(final CarType carType) {
+  public CarBuilder setCarType(final CarType carType) {
     this.carType = carType;
+    return this;
   }
 
   public int getSeats() {
@@ -33,8 +34,9 @@ public class CarBuilder implements Builder {
   }
 
   @Override
-  public void setSeats(final int seats) {
+  public CarBuilder setSeats(final int seats) {
     this.seats = seats;
+    return this;
   }
 
   public Engine getEngine() {
@@ -42,8 +44,9 @@ public class CarBuilder implements Builder {
   }
 
   @Override
-  public void setEngine(final Engine engine) {
+  public CarBuilder setEngine(final Engine engine) {
     this.engine = engine;
+    return this;
   }
 
   public Transmission getTransmission() {
@@ -51,7 +54,8 @@ public class CarBuilder implements Builder {
   }
 
   @Override
-  public void setTransmission(final Transmission transmission) {
+  public CarBuilder setTransmission(final Transmission transmission) {
     this.transmission = transmission;
+    return this;
   }
 }

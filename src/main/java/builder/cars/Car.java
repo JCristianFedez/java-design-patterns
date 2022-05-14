@@ -21,7 +21,7 @@ public class Car {
     this.transmission = carBuilder.getTransmission();
   }
 
-  public CarBuilder builder() {
+  public static CarBuilder builder() {
     return new CarBuilder();
   }
 

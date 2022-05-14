@@ -1,8 +1,11 @@
 package builder;
 
 import builder.cars.Car;
+import builder.cars.CarType;
 import builder.cars.builder.CarBuilder;
 import builder.cars.builder.Director;
+import builder.components.engine.Engine;
+import builder.components.transmission.Transmission;
 import commons.logger.Logger;
 
 public class Demo {
@@ -24,5 +27,13 @@ public class Demo {
 
     LOGGER.info("CarManual built: %s", carManual.toString());
 
+    final Car carBasic = Car.builder()
+        .setCarType(CarType.CITY_CAR)
+        .setTransmission(Transmission.AUTOMATIC)
+        .setSeats(3)
+        .setEngine(new Engine(1, 2))
+        .build();
+
+    LOGGER.info("CarBasic %s", carBasic);
   }
 }
