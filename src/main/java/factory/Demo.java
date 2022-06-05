@@ -6,6 +6,7 @@ import factory.factory.LinuxDialog;
 
 public class Demo {
 
+  // TODO: 6/2/22 Hacer un ejemplo sin mirar internet.
   private static Dialog dialog;
 
   public static void main(String[] args) {
