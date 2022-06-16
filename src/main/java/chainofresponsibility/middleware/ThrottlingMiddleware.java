@@ -1,0 +1,45 @@
+package chainofresponsibility.middleware;
+
+import commons.logger.Logger;
+
+/**
+ * Manejador concreto. Comprueba si hay demasiadas solicitudes de inicio de sesión fallidas.
+ */
+public class ThrottlingMiddleware extends Middleware {
+
+  private static final Logger LOGGER = Logger.fromType(ThrottlingMiddleware.class);
+
+  private final int requestPerMinute;
+
+  private int request;
+
+  private long currentTime;
+
+  public ThrottlingMiddleware(final int requestPerMinute) {
+    this.requestPerMinute = requestPerMinute;
+    this.currentTime = System.currentTimeMillis();
+    this.request = 0;
+  }
+
+  /**
+   * Por favor, no se puede insertar la llamada checkNext() tanto al principio como al final de este método. Esto brinda mucha más
+   * flexibilidad que un simple bucle sobre todos los objetos de middleware. Por ejemplo, un elemento de una cadena puede cambiar el orden
+   * de las comprobaciones ejecutando su comprobación después de todas las demás comprobaciones.
+   */
+  @Override
+  public boolean check(final String email, final String password) {
+    if (System.currentTimeMillis() > this.currentTime + 60_000) {
+      this.request = 0;
+      this.currentTime = System.currentTimeMillis();
+    }
+
+    this.request++;
+
+    if (this.request > this.requestPerMinute) {
+      LOGGER.debug("Limite de peticiones excedido");
+      Thread.currentThread().stop();
+    }
+
+    return this.checkNext(email, password);
+  }
+}
