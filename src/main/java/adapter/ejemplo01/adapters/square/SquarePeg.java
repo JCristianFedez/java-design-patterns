@@ -1,4 +1,4 @@
-package adapter.square;
+package adapter.ejemplo01.adapters.square;
 
 /**
  * SquarePegs no son compatibles con RoundHoles (fueron implementados por equipo de desarrollo anterior). Pero tenemos que integrarlos en

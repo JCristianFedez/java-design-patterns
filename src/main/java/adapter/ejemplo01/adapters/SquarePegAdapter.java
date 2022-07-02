@@ -1,7 +1,7 @@
-package adapter.adapters;
+package adapter.ejemplo01.adapters;
 
-import adapter.round.RoundPeg;
-import adapter.square.SquarePeg;
+import adapter.ejemplo01.adapters.round.RoundPeg;
+import adapter.ejemplo01.adapters.square.SquarePeg;
 
 /**
  * El adaptador permite colocar SquarePegs en RoundHoles.

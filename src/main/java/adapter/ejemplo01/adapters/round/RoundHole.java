@@ -1,4 +1,4 @@
-package adapter.round;
+package adapter.ejemplo01.adapters.round;
 
 /**
  * RoundHole es compatible con ROundPegs.

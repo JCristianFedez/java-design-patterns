@@ -1,9 +1,8 @@
-package adapter;
+package adapter.ejemplo01.adapters;
 
-import adapter.adapters.SquarePegAdapter;
-import adapter.round.RoundHole;
-import adapter.round.RoundPeg;
-import adapter.square.SquarePeg;
+import adapter.ejemplo01.adapters.round.RoundHole;
+import adapter.ejemplo01.adapters.round.RoundPeg;
+import adapter.ejemplo01.adapters.square.SquarePeg;
 import commons.logger.Logger;
 
 public class Demo {
