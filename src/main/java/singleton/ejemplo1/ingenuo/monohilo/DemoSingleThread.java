@@ -1,4 +1,4 @@
-package singleton.ingenuo.monohilo;
+package singleton.ejemplo1.ingenuo.monohilo;
 
 import commons.logger.Logger;
 

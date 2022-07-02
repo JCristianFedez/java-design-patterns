@@ -1,4 +1,4 @@
-package singleton.ingenuo.multihilo;
+package singleton.ejemplo1.ingenuo.multihilo;
 
 import java.util.StringJoiner;
 import java.util.concurrent.TimeUnit;

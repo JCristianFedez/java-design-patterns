@@ -1,4 +1,4 @@
-package singleton.withsecurityonthreads;
+package singleton.ejemplo1.withsecurityonthreads;
 
 import java.util.StringJoiner;
 

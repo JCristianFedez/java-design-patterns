@@ -1,4 +1,4 @@
-package singleton.ingenuo.multihilo;
+package singleton.ejemplo1.withsecurityonthreads;
 
 import commons.logger.Logger;
 
