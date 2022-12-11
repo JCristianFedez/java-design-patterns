@@ -1,0 +1,5 @@
+package acyclicvisitor;
+
+interface ModemVisitor {
+
+}
