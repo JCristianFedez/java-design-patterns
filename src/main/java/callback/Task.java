@@ -2,9 +2,9 @@ package callback;
 
 import java.util.Optional;
 
-abstract class Task {
+interface Task {
 
-  final void executeWith(final Callback callback) {
+  default void executeWith(final Callback callback) {
     execute();
     Optional.ofNullable(callback).ifPresent(Callback::call);
   }

@@ -2,7 +2,7 @@ package callback;
 
 import commons.logger.Logger;
 
-final class SimpleTask extends Task {
+final class SimpleTask implements Task {
 
   private static final Logger LOGGER = Logger.fromType(SimpleTask.class);
 
