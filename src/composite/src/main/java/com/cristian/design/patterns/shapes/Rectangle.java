@@ -1,4 +1,4 @@
-package composite.shapes;
+package com.cristian.design.patterns.shapes;
 
 import java.awt.Color;
 import java.awt.Graphics;

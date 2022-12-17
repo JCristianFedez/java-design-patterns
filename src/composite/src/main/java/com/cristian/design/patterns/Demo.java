@@ -1,12 +1,12 @@
-package composite;
+package com.cristian.design.patterns;
 
 import java.awt.Color;
 
-import composite.editor.ImageEditor;
-import composite.shapes.Circle;
-import composite.shapes.CompoundShape;
-import composite.shapes.Dot;
-import composite.shapes.Rectangle;
+import com.cristian.design.patterns.editor.ImageEditor;
+import com.cristian.design.patterns.shapes.Circle;
+import com.cristian.design.patterns.shapes.CompoundShape;
+import com.cristian.design.patterns.shapes.Dot;
+import com.cristian.design.patterns.shapes.Rectangle;
 
 public class Demo {
 
