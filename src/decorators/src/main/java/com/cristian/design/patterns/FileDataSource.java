@@ -44,6 +44,6 @@ public class FileDataSource implements DataSource {
   }
 
   private String getPathname() {
-    return EnvParameters.GENERATED_FILE_URL.getValue() + this.name;
+    return EnvParameters.GENERATED_FILE_URL.buildValue("decorators") + this.name;
   }
 }
