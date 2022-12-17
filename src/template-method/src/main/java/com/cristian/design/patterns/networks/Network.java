@@ -1,4 +1,4 @@
-package templatemethod.networks;
+package com.cristian.design.patterns.networks;
 
 public abstract class Network {
 

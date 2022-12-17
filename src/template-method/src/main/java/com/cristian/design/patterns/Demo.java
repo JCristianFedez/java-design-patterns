@@ -1,10 +1,10 @@
-package templatemethod;
+package com.cristian.design.patterns;
 
 import java.util.Scanner;
 
-import templatemethod.networks.Facebook;
-import templatemethod.networks.Network;
-import templatemethod.networks.Twitter;
+import com.cristian.design.patterns.networks.Facebook;
+import com.cristian.design.patterns.networks.Network;
+import com.cristian.design.patterns.networks.Twitter;
 
 public class Demo {
 
