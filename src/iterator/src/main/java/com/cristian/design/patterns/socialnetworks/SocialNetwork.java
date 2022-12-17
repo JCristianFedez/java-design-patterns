@@ -1,6 +1,6 @@
-package iterator.socialnetworks;
+package com.cristian.design.patterns.socialnetworks;
 
-import iterator.iterators.ProfileIterator;
+import com.cristian.design.patterns.iterators.ProfileIterator;
 
 public interface SocialNetwork {
 

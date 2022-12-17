@@ -1,11 +1,11 @@
-package iterator.iterators;
+package com.cristian.design.patterns.iterators;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import iterator.profile.Profile;
-import iterator.socialnetworks.Facebook;
+import com.cristian.design.patterns.profile.Profile;
+import com.cristian.design.patterns.socialnetworks.Facebook;
 
 public class FacebookIterator implements ProfileIterator {
 

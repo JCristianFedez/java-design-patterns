@@ -1,8 +1,8 @@
-package iterator.spammer;
+package com.cristian.design.patterns.spammer;
 
-import commons.logger.Logger;
-import iterator.iterators.ProfileIterator;
-import iterator.socialnetworks.SocialNetwork;
+import com.cristian.design.patterns.iterators.ProfileIterator;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.socialnetworks.SocialNetwork;
 
 public class SocialSpammer {
 

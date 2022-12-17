@@ -1,4 +1,4 @@
-package iterator.profile;
+package com.cristian.design.patterns.profile;
 
 import java.util.ArrayList;
 import java.util.HashMap;

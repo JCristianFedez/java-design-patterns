@@ -1,12 +1,12 @@
-package iterator.socialnetworks;
+package com.cristian.design.patterns.socialnetworks;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import commons.logger.Logger;
-import iterator.iterators.LinkedInIterator;
-import iterator.iterators.ProfileIterator;
-import iterator.profile.Profile;
+import com.cristian.design.patterns.iterators.LinkedInIterator;
+import com.cristian.design.patterns.iterators.ProfileIterator;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.profile.Profile;
 
 public class LinkedIn implements SocialNetwork {
 

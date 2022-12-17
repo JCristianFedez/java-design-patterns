@@ -24,6 +24,7 @@
     <module>src/facade</module>
     <module>src/factory</module>
     <module>src/fly-weight</module>
+    <module>src/iterator</module>
   </modules>
   <dependencies>
     <dependency>

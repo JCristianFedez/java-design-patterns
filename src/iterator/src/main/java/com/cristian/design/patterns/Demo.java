@@ -1,15 +1,15 @@
-package iterator;
+package com.cristian.design.patterns;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-import commons.logger.Logger;
-import iterator.profile.Profile;
-import iterator.socialnetworks.Facebook;
-import iterator.socialnetworks.LinkedIn;
-import iterator.socialnetworks.SocialNetwork;
-import iterator.spammer.SocialSpammer;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.profile.Profile;
+import com.cristian.design.patterns.socialnetworks.Facebook;
+import com.cristian.design.patterns.socialnetworks.LinkedIn;
+import com.cristian.design.patterns.socialnetworks.SocialNetwork;
+import com.cristian.design.patterns.spammer.SocialSpammer;
 
 public class Demo {
 
