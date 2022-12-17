@@ -1,4 +1,4 @@
-package acyclicvisitor;
+package com.cristian.design.patterns;
 
 interface Modem {
 

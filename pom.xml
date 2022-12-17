@@ -12,6 +12,7 @@
     <module>src/abstract-factory</module>
     <module>src/commons</module>
     <module>src/active-object</module>
+    <module>src/acyclic-visitor</module>
   </modules>
   <dependencies>
     <dependency>

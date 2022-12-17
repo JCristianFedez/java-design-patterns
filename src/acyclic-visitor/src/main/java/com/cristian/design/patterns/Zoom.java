@@ -1,6 +1,6 @@
-package acyclicvisitor;
+package com.cristian.design.patterns;
 
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
 
 final class Zoom implements Modem {
 
