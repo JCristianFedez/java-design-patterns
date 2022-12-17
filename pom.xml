@@ -29,6 +29,7 @@
     <module>src/memento</module>
     <module>src/observer</module>
     <module>src/prototype</module>
+    <module>src/proxy</module>
   </modules>
   <dependencies>
     <dependency>

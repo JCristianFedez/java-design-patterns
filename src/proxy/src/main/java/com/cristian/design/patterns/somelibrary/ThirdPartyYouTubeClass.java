@@ -1,10 +1,10 @@
-package proxy.somelibrary;
+package com.cristian.design.patterns.somelibrary;
 
 import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.Random;
 
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
 
 public class ThirdPartyYouTubeClass implements ThirdPartyYouTubeLib {
 

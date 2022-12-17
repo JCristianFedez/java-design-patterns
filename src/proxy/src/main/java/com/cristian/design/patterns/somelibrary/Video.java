@@ -1,4 +1,4 @@
-package proxy.somelibrary;
+package com.cristian.design.patterns.somelibrary;
 
 import java.util.StringJoiner;
 

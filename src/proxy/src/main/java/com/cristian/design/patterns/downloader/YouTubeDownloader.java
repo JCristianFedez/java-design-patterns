@@ -1,10 +1,10 @@
-package proxy.downloader;
+package com.cristian.design.patterns.downloader;
 
 import java.util.HashMap;
 
-import commons.logger.Logger;
-import proxy.somelibrary.ThirdPartyYouTubeLib;
-import proxy.somelibrary.Video;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.somelibrary.ThirdPartyYouTubeLib;
+import com.cristian.design.patterns.somelibrary.Video;
 
 public class YouTubeDownloader {
 

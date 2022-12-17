@@ -1,11 +1,11 @@
-package proxy.proxy;
+package com.cristian.design.patterns.proxy;
 
 import java.util.HashMap;
 
-import commons.logger.Logger;
-import proxy.somelibrary.ThirdPartyYouTubeClass;
-import proxy.somelibrary.ThirdPartyYouTubeLib;
-import proxy.somelibrary.Video;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.somelibrary.ThirdPartyYouTubeClass;
+import com.cristian.design.patterns.somelibrary.ThirdPartyYouTubeLib;
+import com.cristian.design.patterns.somelibrary.Video;
 
 public class YouTubeCacheProxy implements ThirdPartyYouTubeLib {
 

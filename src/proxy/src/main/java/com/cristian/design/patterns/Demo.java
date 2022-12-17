@@ -1,9 +1,9 @@
-package proxy;
+package com.cristian.design.patterns;
 
-import commons.logger.Logger;
-import proxy.downloader.YouTubeDownloader;
-import proxy.proxy.YouTubeCacheProxy;
-import proxy.somelibrary.ThirdPartyYouTubeClass;
+import com.cristian.design.patterns.downloader.YouTubeDownloader;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.proxy.YouTubeCacheProxy;
+import com.cristian.design.patterns.somelibrary.ThirdPartyYouTubeClass;
 
 public class Demo {
 
