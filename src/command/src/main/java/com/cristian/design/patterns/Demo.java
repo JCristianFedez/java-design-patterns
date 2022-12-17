@@ -1,6 +1,6 @@
-package command;
+package com.cristian.design.patterns;
 
-import command.editor.Editor;
+import com.cristian.design.patterns.editor.Editor;
 
 public class Demo {
 

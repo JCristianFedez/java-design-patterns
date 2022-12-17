@@ -1,4 +1,4 @@
-package command.commands;
+package com.cristian.design.patterns.commands;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

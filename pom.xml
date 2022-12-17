@@ -17,7 +17,8 @@
     <module>src/builder</module>
     <module>src/business-delegate</module>
     <module>src/callback</module>
-    <module>chain-of-responsibility</module>
+    <module>src/chain-of-responsibility</module>
+    <module>src/command</module>
   </modules>
   <dependencies>
     <dependency>
