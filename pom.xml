@@ -15,6 +15,7 @@
     <module>src/acyclic-visitor</module>
     <module>src/bridge</module>
     <module>src/builder</module>
+    <module>src/business-delegate</module>
   </modules>
   <dependencies>
     <dependency>

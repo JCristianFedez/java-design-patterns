@@ -1,4 +1,4 @@
-package businessdelegate;
+package com.cristian.design.patterns;
 
 class MobileClient {
 
