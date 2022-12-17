@@ -1,15 +1,15 @@
-package chainofresponsibility;
+package com.cristian.design.patterns;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import chainofresponsibility.middleware.Middleware;
-import chainofresponsibility.middleware.RoleCheckMiddleware;
-import chainofresponsibility.middleware.ThrottlingMiddleware;
-import chainofresponsibility.middleware.UserExistsMiddleware;
-import chainofresponsibility.server.Server;
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.middleware.Middleware;
+import com.cristian.design.patterns.middleware.RoleCheckMiddleware;
+import com.cristian.design.patterns.middleware.ThrottlingMiddleware;
+import com.cristian.design.patterns.middleware.UserExistsMiddleware;
+import com.cristian.design.patterns.server.Server;
 
 public class Demo {
 

@@ -1,10 +1,10 @@
-package chainofresponsibility.server;
+package com.cristian.design.patterns.server;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import chainofresponsibility.middleware.Middleware;
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.middleware.Middleware;
 
 public class Server {
 

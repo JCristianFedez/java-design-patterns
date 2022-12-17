@@ -1,4 +1,4 @@
-package chainofresponsibility.middleware;
+package com.cristian.design.patterns.middleware;
 
 /**
  * Clase middleware básica.

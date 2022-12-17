@@ -1,7 +1,7 @@
-package chainofresponsibility.middleware;
+package com.cristian.design.patterns.middleware;
 
-import chainofresponsibility.server.Server;
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.server.Server;
 
 /**
  *  Manejador concreto. Comprueba si existe un usuario con las credenciales proporcionadas.

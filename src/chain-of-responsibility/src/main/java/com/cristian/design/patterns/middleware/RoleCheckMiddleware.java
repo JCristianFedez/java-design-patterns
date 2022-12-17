@@ -1,6 +1,6 @@
-package chainofresponsibility.middleware;
+package com.cristian.design.patterns.middleware;
 
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
 
 /**
  * Manejador concreto. Revisa el rol de un usuario.
