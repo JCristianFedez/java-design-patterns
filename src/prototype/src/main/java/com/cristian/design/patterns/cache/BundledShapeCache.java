@@ -1,11 +1,11 @@
-package prototype.cache;
+package com.cristian.design.patterns.cache;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-import prototype.shapes.Circle;
-import prototype.shapes.Rectangle;
-import prototype.shapes.Shape;
+import com.cristian.design.patterns.shapes.Circle;
+import com.cristian.design.patterns.shapes.Rectangle;
+import com.cristian.design.patterns.shapes.Shape;
 
 public class BundledShapeCache {
 

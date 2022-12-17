@@ -1,8 +1,8 @@
-package prototype;
+package com.cristian.design.patterns;
 
-import commons.logger.Logger;
-import prototype.cache.BundledShapeCache;
-import prototype.shapes.Shape;
+import com.cristian.design.patterns.cache.BundledShapeCache;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.shapes.Shape;
 
 public class DemoWithCache {
 

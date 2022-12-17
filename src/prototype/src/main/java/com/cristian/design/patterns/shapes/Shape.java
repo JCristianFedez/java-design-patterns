@@ -1,4 +1,4 @@
-package prototype.shapes;
+package com.cristian.design.patterns.shapes;
 
 import java.util.Objects;
 

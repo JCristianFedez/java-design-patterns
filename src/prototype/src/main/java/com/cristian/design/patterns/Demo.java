@@ -1,12 +1,12 @@
-package prototype;
+package com.cristian.design.patterns;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import commons.logger.Logger;
-import prototype.shapes.Circle;
-import prototype.shapes.Rectangle;
-import prototype.shapes.Shape;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.shapes.Circle;
+import com.cristian.design.patterns.shapes.Rectangle;
+import com.cristian.design.patterns.shapes.Shape;
 
 public class Demo {
 

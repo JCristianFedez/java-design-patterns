@@ -28,6 +28,7 @@
     <module>src/adapter</module>
     <module>src/memento</module>
     <module>src/observer</module>
+    <module>src/prototype</module>
   </modules>
   <dependencies>
     <dependency>
