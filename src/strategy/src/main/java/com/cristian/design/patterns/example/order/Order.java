@@ -1,6 +1,6 @@
-package strategy.example.order;
+package com.cristian.design.patterns.example.order;
 
-import strategy.example.strategies.PayStrategy;
+import com.cristian.design.patterns.example.strategies.PayStrategy;
 
 /**
  * Order class. Doesn't know the concrete payment method (strategy) user has

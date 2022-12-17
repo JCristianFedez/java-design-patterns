@@ -32,6 +32,7 @@
     <module>src/proxy</module>
     <module>src/singleton</module>
     <module>src/state</module>
+    <module>src/strategy</module>
   </modules>
   <dependencies>
     <dependency>

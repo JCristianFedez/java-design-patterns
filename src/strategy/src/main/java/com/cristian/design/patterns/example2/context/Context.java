@@ -1,7 +1,7 @@
-package strategy.example2.context;
+package com.cristian.design.patterns.example2.context;
 
-import strategy.example2.strategies.Strategy;
-import strategy.example2.strategies.StrategyA;
+import com.cristian.design.patterns.example2.strategies.Strategy;
+import com.cristian.design.patterns.example2.strategies.StrategyA;
 
 public class Context {
 

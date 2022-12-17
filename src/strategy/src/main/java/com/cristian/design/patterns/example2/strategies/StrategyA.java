@@ -1,6 +1,6 @@
-package strategy.example2.strategies;
+package com.cristian.design.patterns.example2.strategies;
 
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
 
 public class StrategyA implements Strategy {
   private static final Logger LOGGER = Logger.fromType(StrategyA.class);
