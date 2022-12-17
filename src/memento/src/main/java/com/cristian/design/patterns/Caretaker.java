@@ -1,4 +1,4 @@
-package memento;
+package com.cristian.design.patterns;
 
 import java.util.ArrayList;
 import java.util.Arrays;

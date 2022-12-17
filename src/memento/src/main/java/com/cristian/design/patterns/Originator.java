@@ -1,6 +1,6 @@
-package memento;
+package com.cristian.design.patterns;
 
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
 
 public class Originator {
 

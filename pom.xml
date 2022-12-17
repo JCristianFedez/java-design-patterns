@@ -26,6 +26,7 @@
     <module>src/fly-weight</module>
     <module>src/iterator</module>
     <module>src/adapter</module>
+    <module>src/memento</module>
   </modules>
   <dependencies>
     <dependency>
