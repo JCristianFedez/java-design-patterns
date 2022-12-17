@@ -27,6 +27,7 @@
     <module>src/iterator</module>
     <module>src/adapter</module>
     <module>src/memento</module>
+    <module>src/observer</module>
   </modules>
   <dependencies>
     <dependency>

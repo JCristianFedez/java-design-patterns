@@ -1,9 +1,9 @@
-package observer;
+package com.cristian.design.patterns;
 
-import commons.logger.constants.EnvParameters;
-import observer.editor.Editor;
-import observer.listeners.EmailNotificationListener;
-import observer.listeners.LogOpenListener;
+import com.cristian.design.patterns.editor.Editor;
+import com.cristian.design.patterns.listeners.EmailNotificationListener;
+import com.cristian.design.patterns.listeners.LogOpenListener;
+import com.cristian.design.patterns.logger.constants.EnvParameters;
 
 public class Demo {
 

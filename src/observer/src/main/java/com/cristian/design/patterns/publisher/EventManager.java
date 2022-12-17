@@ -1,4 +1,4 @@
-package observer.publisher;
+package com.cristian.design.patterns.publisher;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import observer.listeners.EventListener;
+import com.cristian.design.patterns.listeners.EventListener;
 
 public class EventManager {
 

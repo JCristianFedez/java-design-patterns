@@ -1,8 +1,8 @@
-package observer.editor;
+package com.cristian.design.patterns.editor;
 
 import java.io.File;
 
-import observer.publisher.EventManager;
+import com.cristian.design.patterns.publisher.EventManager;
 
 public class Editor {
 

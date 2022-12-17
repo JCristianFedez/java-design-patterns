@@ -1,8 +1,8 @@
-package observer.listeners;
+package com.cristian.design.patterns.listeners;
 
 import java.io.File;
 
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
 
 public class LogOpenListener implements EventListener {
   private static final Logger LOGGER = Logger.fromType(LogOpenListener.class);
