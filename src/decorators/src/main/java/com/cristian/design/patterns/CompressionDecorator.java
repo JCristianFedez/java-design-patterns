@@ -1,4 +1,4 @@
-package decorator.decorators;
+package com.cristian.design.patterns;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -9,7 +9,7 @@ import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
 
 public class CompressionDecorator extends DataSourceDecorator {
 

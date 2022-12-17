@@ -1,6 +1,6 @@
-package decorator.decorators;
+package com.cristian.design.patterns;
 
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
 
 public class Demo {
   private static final Logger LOGGER = Logger.fromType(Demo.class);

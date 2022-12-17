@@ -20,6 +20,7 @@
     <module>src/chain-of-responsibility</module>
     <module>src/command</module>
     <module>src/composite</module>
+    <module>src/decorators</module>
   </modules>
   <dependencies>
     <dependency>

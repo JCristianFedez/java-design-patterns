@@ -1,4 +1,4 @@
-package decorator.decorators;
+package com.cristian.design.patterns;
 
 import java.io.File;
 import java.io.FileReader;
@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.file.Files;
 
-import commons.logger.Logger;
-import commons.logger.constants.EnvParameters;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.logger.constants.EnvParameters;
 
 public class FileDataSource implements DataSource {
 

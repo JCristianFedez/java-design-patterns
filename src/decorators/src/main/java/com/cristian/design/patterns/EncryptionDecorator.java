@@ -1,4 +1,4 @@
-package decorator.decorators;
+package com.cristian.design.patterns;
 
 import java.util.Base64;
 
