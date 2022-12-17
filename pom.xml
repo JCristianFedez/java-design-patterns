@@ -30,6 +30,7 @@
     <module>src/observer</module>
     <module>src/prototype</module>
     <module>src/proxy</module>
+    <module>src/singleton</module>
   </modules>
   <dependencies>
     <dependency>
