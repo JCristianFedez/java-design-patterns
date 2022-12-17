@@ -1,7 +1,7 @@
-package state;
+package com.cristian.design.patterns;
 
-import state.ui.Player;
-import state.ui.UI;
+import com.cristian.design.patterns.ui.Player;
+import com.cristian.design.patterns.ui.UI;
 
 public class Demo {
 

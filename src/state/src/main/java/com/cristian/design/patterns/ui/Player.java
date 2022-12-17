@@ -1,10 +1,10 @@
-package state.ui;
+package com.cristian.design.patterns.ui;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import state.states.ReadyState;
-import state.states.State;
+import com.cristian.design.patterns.states.ReadyState;
+import com.cristian.design.patterns.states.State;
 
 public class Player {
 

@@ -31,6 +31,7 @@
     <module>src/prototype</module>
     <module>src/proxy</module>
     <module>src/singleton</module>
+    <module>src/state</module>
   </modules>
   <dependencies>
     <dependency>

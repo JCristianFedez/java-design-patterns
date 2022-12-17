@@ -1,6 +1,6 @@
-package state.states;
+package com.cristian.design.patterns.states;
 
-import state.ui.Player;
+import com.cristian.design.patterns.ui.Player;
 
 public class ReadyState extends State {
 

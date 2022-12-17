@@ -1,4 +1,4 @@
-package state.ui;
+package com.cristian.design.patterns.ui;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
