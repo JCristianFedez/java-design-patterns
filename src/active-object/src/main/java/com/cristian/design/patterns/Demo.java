@@ -1,4 +1,4 @@
-package activeobject;
+package com.cristian.design.patterns;
 
 public class Demo {
 

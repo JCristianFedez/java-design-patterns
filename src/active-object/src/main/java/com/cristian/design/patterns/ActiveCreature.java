@@ -1,9 +1,9 @@
-package activeobject;
+package com.cristian.design.patterns;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
 
 abstract class ActiveCreature {
 

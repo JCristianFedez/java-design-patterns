@@ -11,6 +11,7 @@
   <modules>
     <module>src/abstract-factory</module>
     <module>src/commons</module>
+    <module>src/active-object</module>
   </modules>
   <dependencies>
     <dependency>
