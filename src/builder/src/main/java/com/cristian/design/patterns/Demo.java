@@ -1,0 +1,39 @@
+package com.cristian.design.patterns;
+
+import com.cristian.design.patterns.cars.Car;
+import com.cristian.design.patterns.cars.CarType;
+import com.cristian.design.patterns.cars.builder.CarBuilder;
+import com.cristian.design.patterns.cars.builder.Director;
+import com.cristian.design.patterns.components.engine.Engine;
+import com.cristian.design.patterns.components.transmission.Transmission;
+import com.cristian.design.patterns.logger.Logger;
+
+public class Demo {
+
+  private static final Logger LOGGER = Logger.fromType(Demo.class);
+
+  public static void main(String[] args) {
+    final Director director = new Director();
+    final CarBuilder builder = new CarBuilder();
+    director.constructSportsCar(builder);
+    final Car car = builder.build();
+
+    LOGGER.info("Car built %s", car.toString());
+
+    final CarBuilder manualBuilder = new CarBuilder();
+    director.constructSportsCar(manualBuilder);
+    manualBuilder.setSeats(200);
+    final Car carManual = builder.build();
+
+    LOGGER.info("CarManual built: %s", carManual.toString());
+
+    final Car carBasic = Car.builder()
+        .setCarType(CarType.CITY_CAR)
+        .setTransmission(Transmission.AUTOMATIC)
+        .setSeats(3)
+        .setEngine(new Engine(1, 2))
+        .build();
+
+    LOGGER.info("CarBasic %s", carBasic);
+  }
+}

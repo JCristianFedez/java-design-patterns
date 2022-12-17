@@ -13,6 +13,8 @@
     <module>src/commons</module>
     <module>src/active-object</module>
     <module>src/acyclic-visitor</module>
+    <module>src/bridge</module>
+    <module>src/builder</module>
   </modules>
   <dependencies>
     <dependency>
