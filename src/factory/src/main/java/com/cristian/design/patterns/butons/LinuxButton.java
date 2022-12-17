@@ -1,4 +1,4 @@
-package factory.butons;
+package com.cristian.design.patterns.butons;
 
 import java.awt.Color;
 import java.awt.FlowLayout;

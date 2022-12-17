@@ -22,6 +22,7 @@
     <module>src/composite</module>
     <module>src/decorators</module>
     <module>src/facade</module>
+    <module>src/factory</module>
   </modules>
   <dependencies>
     <dependency>

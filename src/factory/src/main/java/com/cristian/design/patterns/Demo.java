@@ -1,8 +1,8 @@
-package factory;
+package com.cristian.design.patterns;
 
-import factory.factory.Dialog;
-import factory.factory.HtmlDialog;
-import factory.factory.LinuxDialog;
+import com.cristian.design.patterns.factory.Dialog;
+import com.cristian.design.patterns.factory.HtmlDialog;
+import com.cristian.design.patterns.factory.LinuxDialog;
 
 public class Demo {
 

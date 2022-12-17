@@ -1,6 +1,6 @@
-package factory.butons;
+package com.cristian.design.patterns.butons;
 
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
 
 public class HtmlButton implements Button {
 

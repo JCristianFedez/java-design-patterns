@@ -1,6 +1,6 @@
-package factory.factory;
+package com.cristian.design.patterns.factory;
 
-import factory.butons.Button;
+import com.cristian.design.patterns.butons.Button;
 
 public interface Dialog {
 
