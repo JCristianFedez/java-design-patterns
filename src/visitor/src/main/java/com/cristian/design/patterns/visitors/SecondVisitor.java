@@ -1,8 +1,8 @@
-package visitor.visitors;
+package com.cristian.design.patterns.visitors;
 
-import visitor.elements.FirstElement;
-import visitor.elements.SecondElement;
-import visitor.elements.ThirdElement;
+import com.cristian.design.patterns.elements.FirstElement;
+import com.cristian.design.patterns.elements.SecondElement;
+import com.cristian.design.patterns.elements.ThirdElement;
 
 public class SecondVisitor implements Visitor {
 

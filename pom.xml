@@ -34,6 +34,7 @@
     <module>src/state</module>
     <module>src/strategy</module>
     <module>src/template-method</module>
+    <module>src/visitor</module>
   </modules>
   <dependencies>
     <dependency>

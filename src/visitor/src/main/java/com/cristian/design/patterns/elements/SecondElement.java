@@ -1,6 +1,6 @@
-package visitor.elements;
+package com.cristian.design.patterns.elements;
 
-import visitor.visitors.Visitor;
+import com.cristian.design.patterns.visitors.Visitor;
 
 public class SecondElement implements Element {
 
