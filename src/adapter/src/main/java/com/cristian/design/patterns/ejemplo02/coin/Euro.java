@@ -1,4 +1,4 @@
-package adapter.ejemplo02.coin;
+package com.cristian.design.patterns.ejemplo02.coin;
 
 public class Euro {
 

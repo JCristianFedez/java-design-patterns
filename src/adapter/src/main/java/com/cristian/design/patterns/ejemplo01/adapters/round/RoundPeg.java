@@ -1,4 +1,4 @@
-package adapter.ejemplo01.adapters.round;
+package com.cristian.design.patterns.ejemplo01.adapters.round;
 
 /**
  * RoundPeg are compatible with RoundHoles.

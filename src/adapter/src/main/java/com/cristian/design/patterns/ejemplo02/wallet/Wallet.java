@@ -1,6 +1,6 @@
-package adapter.ejemplo02.wallet;
+package com.cristian.design.patterns.ejemplo02.wallet;
 
-import adapter.ejemplo02.coin.Dollar;
+import com.cristian.design.patterns.ejemplo02.coin.Dollar;
 
 public class Wallet {
 

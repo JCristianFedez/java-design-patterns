@@ -1,9 +1,9 @@
-package adapter.ejemplo01.adapters;
+package com.cristian.design.patterns.ejemplo01.adapters;
 
-import adapter.ejemplo01.adapters.round.RoundHole;
-import adapter.ejemplo01.adapters.round.RoundPeg;
-import adapter.ejemplo01.adapters.square.SquarePeg;
-import commons.logger.Logger;
+import com.cristian.design.patterns.ejemplo01.adapters.round.RoundHole;
+import com.cristian.design.patterns.ejemplo01.adapters.round.RoundPeg;
+import com.cristian.design.patterns.ejemplo01.adapters.square.SquarePeg;
+import com.cristian.design.patterns.logger.Logger;
 
 public class Demo {
 

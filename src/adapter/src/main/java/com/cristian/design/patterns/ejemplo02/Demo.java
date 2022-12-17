@@ -1,9 +1,9 @@
-package adapter.ejemplo02;
+package com.cristian.design.patterns.ejemplo02;
 
-import adapter.ejemplo02.coin.Dollar;
-import adapter.ejemplo02.coin.Euro;
-import adapter.ejemplo02.coin.EuroAdapter;
-import adapter.ejemplo02.wallet.Wallet;
+import com.cristian.design.patterns.ejemplo02.coin.Dollar;
+import com.cristian.design.patterns.ejemplo02.coin.Euro;
+import com.cristian.design.patterns.ejemplo02.coin.EuroAdapter;
+import com.cristian.design.patterns.ejemplo02.wallet.Wallet;
 
 public class Demo {
 
