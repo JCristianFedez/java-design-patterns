@@ -1,15 +1,15 @@
-package facade;
+package com.cristian.design.patterns;
 
 import java.io.File;
 
-import commons.logger.Logger;
-import facade.somecomplexmedialibrary.AudioMixer;
-import facade.somecomplexmedialibrary.BitrateReader;
-import facade.somecomplexmedialibrary.Codec;
-import facade.somecomplexmedialibrary.CodecFactory;
-import facade.somecomplexmedialibrary.MPEG4CompressionCodec;
-import facade.somecomplexmedialibrary.OggCompressionCodec;
-import facade.somecomplexmedialibrary.VideoFile;
+import com.cristian.design.patterns.logger.Logger;
+import com.cristian.design.patterns.somecomplexmedialibrary.AudioMixer;
+import com.cristian.design.patterns.somecomplexmedialibrary.BitrateReader;
+import com.cristian.design.patterns.somecomplexmedialibrary.Codec;
+import com.cristian.design.patterns.somecomplexmedialibrary.CodecFactory;
+import com.cristian.design.patterns.somecomplexmedialibrary.MPEG4CompressionCodec;
+import com.cristian.design.patterns.somecomplexmedialibrary.OggCompressionCodec;
+import com.cristian.design.patterns.somecomplexmedialibrary.VideoFile;
 
 public class VideoConversionFacade {
 

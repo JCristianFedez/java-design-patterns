@@ -1,4 +1,4 @@
-package facade.somecomplexmedialibrary;
+package com.cristian.design.patterns.somecomplexmedialibrary;
 
 public class VideoFile {
 

@@ -21,6 +21,7 @@
     <module>src/command</module>
     <module>src/composite</module>
     <module>src/decorators</module>
+    <module>src/facade</module>
   </modules>
   <dependencies>
     <dependency>

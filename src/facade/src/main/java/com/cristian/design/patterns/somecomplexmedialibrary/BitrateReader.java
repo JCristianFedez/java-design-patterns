@@ -1,6 +1,6 @@
-package facade.somecomplexmedialibrary;
+package com.cristian.design.patterns.somecomplexmedialibrary;
 
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
 
 public class BitrateReader {
 

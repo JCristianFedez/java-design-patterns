@@ -1,4 +1,4 @@
-package facade;
+package com.cristian.design.patterns;
 
 public class Demo {
 
