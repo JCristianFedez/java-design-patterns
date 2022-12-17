@@ -1,6 +1,6 @@
-package callback;
+package com.cristian.design.patterns;
 
-import commons.logger.Logger;
+import com.cristian.design.patterns.logger.Logger;
 
 final class Demo {
 

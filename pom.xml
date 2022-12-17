@@ -16,6 +16,8 @@
     <module>src/bridge</module>
     <module>src/builder</module>
     <module>src/business-delegate</module>
+    <module>src/callback</module>
+    <module>chain-of-responsibility</module>
   </modules>
   <dependencies>
     <dependency>
