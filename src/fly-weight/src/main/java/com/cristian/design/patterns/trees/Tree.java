@@ -1,4 +1,4 @@
-package flyweight.trees;
+package com.cristian.design.patterns.trees;
 
 import java.awt.Graphics;
 

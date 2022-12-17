@@ -1,11 +1,11 @@
-package flyweight;
+package com.cristian.design.patterns;
 
 import java.awt.Color;
 import java.security.SecureRandom;
 import java.util.Random;
 
-import commons.logger.Logger;
-import flyweight.forest.Forest;
+import com.cristian.design.patterns.forest.Forest;
+import com.cristian.design.patterns.logger.Logger;
 
 public class Demo {
 

@@ -23,6 +23,7 @@
     <module>src/decorators</module>
     <module>src/facade</module>
     <module>src/factory</module>
+    <module>src/fly-weight</module>
   </modules>
   <dependencies>
     <dependency>

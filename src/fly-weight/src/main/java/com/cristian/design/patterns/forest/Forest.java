@@ -1,13 +1,14 @@
-package flyweight.forest;
+package com.cristian.design.patterns.forest;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.List;
 
-import flyweight.trees.Tree;
-import flyweight.trees.TreeFactory;
-import flyweight.trees.TreeType;
+import com.cristian.design.patterns.trees.Tree;
+import com.cristian.design.patterns.trees.TreeFactory;
+import com.cristian.design.patterns.trees.TreeType;
+
 import javax.swing.JFrame;
 
 public class Forest extends JFrame {
