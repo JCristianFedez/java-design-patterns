@@ -35,6 +35,7 @@
     <module>src/strategy</module>
     <module>src/template-method</module>
     <module>src/visitor</module>
+    <module>src/combinator</module>
   </modules>
   <dependencies>
     <dependency>
