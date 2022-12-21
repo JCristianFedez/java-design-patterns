@@ -1,6 +1,6 @@
-package com.cristian.design.patterns.commands;
+package com.cristian.design.patterns.example1.commands;
 
-import com.cristian.design.patterns.editor.Editor;
+import com.cristian.design.patterns.example1.editor.Editor;
 
 public class CopyCommand extends Command {
 

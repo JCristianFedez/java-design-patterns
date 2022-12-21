@@ -1,12 +1,12 @@
-package com.cristian.design.patterns.editor;
+package com.cristian.design.patterns.example1.editor;
 
 import java.awt.FlowLayout;
 
-import com.cristian.design.patterns.commands.Command;
-import com.cristian.design.patterns.commands.CommandHistory;
-import com.cristian.design.patterns.commands.CopyCommand;
-import com.cristian.design.patterns.commands.CutCommand;
-import com.cristian.design.patterns.commands.PasteCommand;
+import com.cristian.design.patterns.example1.commands.Command;
+import com.cristian.design.patterns.example1.commands.CommandHistory;
+import com.cristian.design.patterns.example1.commands.CopyCommand;
+import com.cristian.design.patterns.example1.commands.CutCommand;
+import com.cristian.design.patterns.example1.commands.PasteCommand;
 
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
