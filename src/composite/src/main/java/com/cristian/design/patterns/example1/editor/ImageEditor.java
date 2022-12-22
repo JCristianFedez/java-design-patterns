@@ -1,4 +1,4 @@
-package com.cristian.design.patterns.editor;
+package com.cristian.design.patterns.example1.editor;
 
 import java.awt.Canvas;
 import java.awt.Color;
@@ -6,8 +6,8 @@ import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-import com.cristian.design.patterns.shapes.CompoundShape;
-import com.cristian.design.patterns.shapes.Shape;
+import com.cristian.design.patterns.example1.shapes.CompoundShape;
+import com.cristian.design.patterns.example1.shapes.Shape;
 
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;

@@ -1,12 +1,12 @@
-package com.cristian.design.patterns;
+package com.cristian.design.patterns.example1;
 
 import java.awt.Color;
 
-import com.cristian.design.patterns.editor.ImageEditor;
-import com.cristian.design.patterns.shapes.Circle;
-import com.cristian.design.patterns.shapes.CompoundShape;
-import com.cristian.design.patterns.shapes.Dot;
-import com.cristian.design.patterns.shapes.Rectangle;
+import com.cristian.design.patterns.example1.editor.ImageEditor;
+import com.cristian.design.patterns.example1.shapes.Circle;
+import com.cristian.design.patterns.example1.shapes.CompoundShape;
+import com.cristian.design.patterns.example1.shapes.Dot;
+import com.cristian.design.patterns.example1.shapes.Rectangle;
 
 public class Demo {
 

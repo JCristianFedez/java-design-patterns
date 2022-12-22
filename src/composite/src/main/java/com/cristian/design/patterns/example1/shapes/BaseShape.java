@@ -1,4 +1,4 @@
-package com.cristian.design.patterns.shapes;
+package com.cristian.design.patterns.example1.shapes;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
