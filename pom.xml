@@ -36,6 +36,7 @@
     <module>src/template-method</module>
     <module>src/visitor</module>
     <module>src/combinator</module>
+    <module>src/composite-entity</module>
   </modules>
   <dependencies>
     <dependency>
