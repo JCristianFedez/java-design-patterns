@@ -37,6 +37,7 @@
     <module>src/visitor</module>
     <module>src/combinator</module>
     <module>src/composite-entity</module>
+    <module>src/converter</module>
   </modules>
   <dependencies>
     <dependency>
