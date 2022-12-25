@@ -38,6 +38,7 @@
     <module>src/combinator</module>
     <module>src/composite-entity</module>
     <module>src/converter</module>
+    <module>src/currying</module>
   </modules>
   <dependencies>
     <dependency>
