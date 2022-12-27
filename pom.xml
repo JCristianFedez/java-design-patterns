@@ -40,6 +40,7 @@
     <module>src/converter</module>
     <module>src/currying</module>
     <module>src/data-bus</module>
+    <module>src/data-locality</module>
   </modules>
   <dependencies>
     <dependency>
