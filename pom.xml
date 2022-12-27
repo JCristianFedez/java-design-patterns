@@ -39,6 +39,7 @@
     <module>src/composite-entity</module>
     <module>src/converter</module>
     <module>src/currying</module>
+    <module>src/data-bus</module>
   </modules>
   <dependencies>
     <dependency>
@@ -54,6 +55,12 @@
       <version>1.2.17</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.24</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
 
   <properties>
