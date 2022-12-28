@@ -41,6 +41,7 @@
     <module>src/currying</module>
     <module>src/data-bus</module>
     <module>src/data-locality</module>
+    <module>src/data-mapper</module>
   </modules>
   <dependencies>
     <dependency>
