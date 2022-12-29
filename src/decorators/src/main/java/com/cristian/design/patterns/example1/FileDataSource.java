@@ -1,4 +1,4 @@
-package com.cristian.design.patterns;
+package com.cristian.design.patterns.example1;
 
 import java.io.File;
 import java.io.FileReader;
@@ -9,7 +9,7 @@ import java.nio.file.Files;
 import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.logger.constants.EnvParameters;
 
-public class FileDataSource implements DataSource {
+class FileDataSource implements DataSource {
 
   private static final Logger LOGGER = Logger.fromType(FileDataSource.class);
 

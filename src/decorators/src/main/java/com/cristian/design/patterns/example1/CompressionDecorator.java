@@ -1,4 +1,4 @@
-package com.cristian.design.patterns;
+package com.cristian.design.patterns.example1;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -11,7 +11,7 @@ import java.util.zip.InflaterInputStream;
 
 import com.cristian.design.patterns.logger.Logger;
 
-public class CompressionDecorator extends DataSourceDecorator {
+class CompressionDecorator extends DataSourceDecorator {
 
   private static final Logger LOGGER = Logger.fromType(CompressionDecorator.class);
 

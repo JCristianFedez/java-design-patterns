@@ -1,6 +1,6 @@
-package com.cristian.design.patterns;
+package com.cristian.design.patterns.example1;
 
-public class DataSourceDecorator implements DataSource {
+class DataSourceDecorator implements DataSource {
   private final DataSource wrapper;
 
   DataSourceDecorator(final DataSource wrapper) {

@@ -1,8 +1,8 @@
-package com.cristian.design.patterns;
+package com.cristian.design.patterns.example1;
 
 import java.util.Base64;
 
-public class EncryptionDecorator extends DataSourceDecorator {
+class EncryptionDecorator extends DataSourceDecorator {
 
   public EncryptionDecorator(final DataSource wrapper) {
     super(wrapper);

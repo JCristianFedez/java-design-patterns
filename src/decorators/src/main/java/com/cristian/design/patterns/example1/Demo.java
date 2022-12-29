@@ -1,8 +1,8 @@
-package com.cristian.design.patterns;
+package com.cristian.design.patterns.example1;
 
 import com.cristian.design.patterns.logger.Logger;
 
-public class Demo {
+class Demo {
   private static final Logger LOGGER = Logger.fromType(Demo.class);
 
   public static void main(String[] args) {
