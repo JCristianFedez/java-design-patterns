@@ -43,6 +43,7 @@
     <module>src/data-locality</module>
     <module>src/data-mapper</module>
     <module>src/delegation</module>
+    <module>src/dependency-injection</module>
   </modules>
   <dependencies>
     <dependency>
