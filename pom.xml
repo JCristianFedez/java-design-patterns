@@ -42,6 +42,7 @@
     <module>src/data-bus</module>
     <module>src/data-locality</module>
     <module>src/data-mapper</module>
+    <module>src/delegation</module>
   </modules>
   <dependencies>
     <dependency>
