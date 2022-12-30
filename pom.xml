@@ -44,6 +44,7 @@
     <module>src/data-mapper</module>
     <module>src/delegation</module>
     <module>src/dependency-injection</module>
+    <module>src/dirty-flag</module>
   </modules>
   <dependencies>
     <dependency>
