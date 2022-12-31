@@ -45,6 +45,7 @@
     <module>src/delegation</module>
     <module>src/dependency-injection</module>
     <module>src/dirty-flag</module>
+    <module>src/double-buffer</module>
   </modules>
   <dependencies>
     <dependency>
