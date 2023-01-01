@@ -46,6 +46,7 @@
     <module>src/dependency-injection</module>
     <module>src/dirty-flag</module>
     <module>src/double-buffer</module>
+    <module>src/double-checked-locking</module>
   </modules>
   <dependencies>
     <dependency>
