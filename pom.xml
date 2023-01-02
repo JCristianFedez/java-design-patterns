@@ -47,6 +47,7 @@
     <module>src/dirty-flag</module>
     <module>src/double-buffer</module>
     <module>src/double-checked-locking</module>
+    <module>src/double-dispatch</module>
   </modules>
   <dependencies>
     <dependency>
