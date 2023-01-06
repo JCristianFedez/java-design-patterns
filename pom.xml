@@ -48,6 +48,7 @@
     <module>src/double-buffer</module>
     <module>src/double-checked-locking</module>
     <module>src/double-dispatch</module>
+    <module>src/event-aggregator</module>
   </modules>
   <dependencies>
     <dependency>
