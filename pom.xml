@@ -49,6 +49,7 @@
     <module>src/double-checked-locking</module>
     <module>src/double-dispatch</module>
     <module>src/event-aggregator</module>
+    <module>src/event-asynchronous</module>
   </modules>
   <dependencies>
     <dependency>
