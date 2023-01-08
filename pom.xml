@@ -50,6 +50,7 @@
     <module>src/double-dispatch</module>
     <module>src/event-aggregator</module>
     <module>src/event-asynchronous</module>
+    <module>src/event-driven-architecture</module>
   </modules>
   <dependencies>
     <dependency>
