@@ -35,6 +35,7 @@
     <module>src/strategy</module>
     <module>src/template-method</module>
     <module>src/visitor</module>
+<!--    <module>src/annotation</module>-->
     <module>src/combinator</module>
     <module>src/composite-entity</module>
     <module>src/converter</module>
