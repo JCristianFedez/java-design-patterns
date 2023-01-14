@@ -53,6 +53,7 @@
     <module>src/event-asynchronous</module>
     <module>src/event-driven-architecture</module>
     <module>src/event-queue</module>
+    <module>src/event-sourcing</module>
   </modules>
   <dependencies>
     <dependency>
