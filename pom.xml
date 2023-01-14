@@ -54,6 +54,7 @@
     <module>src/event-driven-architecture</module>
     <module>src/event-queue</module>
     <module>src/event-sourcing</module>
+    <module>src/execute-around</module>
   </modules>
   <dependencies>
     <dependency>
