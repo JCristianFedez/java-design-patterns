@@ -55,6 +55,7 @@
     <module>src/event-queue</module>
     <module>src/event-sourcing</module>
     <module>src/execute-around</module>
+    <module>src/extension-objects</module>
   </modules>
   <dependencies>
     <dependency>
