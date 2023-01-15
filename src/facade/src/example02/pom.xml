@@ -5,30 +5,17 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.example</groupId>
-    <artifactId>design-patterns</artifactId>
+    <artifactId>facade</artifactId>
     <version>1.0-SNAPSHOT</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
-  <artifactId>facade</artifactId>
-  <packaging>pom</packaging>
-  <modules>
-    <module>src/example02</module>
-    <module>src/example01</module>
-  </modules>
+  <artifactId>example02</artifactId>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  <dependencies>
-    <dependency>
-      <groupId>org.example</groupId>
-      <artifactId>commons</artifactId>
-      <version>1.0-SNAPSHOT</version>
-      <scope>compile</scope>
-    </dependency>
-  </dependencies>
 
 </project>
