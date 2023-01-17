@@ -10,7 +10,7 @@
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
-  <artifactId>example01</artifactId>
+  <artifactId>facade-example-01</artifactId>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>

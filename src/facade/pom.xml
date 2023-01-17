@@ -13,8 +13,8 @@
   <artifactId>facade</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>src/example02</module>
-    <module>src/example01</module>
+    <module>src/facade-example-02</module>
+    <module>src/facade-example-01</module>
   </modules>
 
   <properties>
