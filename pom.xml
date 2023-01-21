@@ -57,6 +57,7 @@
     <module>src/execute-around</module>
     <module>src/extension-objects</module>
     <module>src/factory-kit</module>
+    <module>src/factory-method</module>
   </modules>
   <dependencies>
     <dependency>
