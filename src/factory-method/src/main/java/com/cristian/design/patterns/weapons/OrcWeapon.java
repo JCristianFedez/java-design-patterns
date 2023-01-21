@@ -1,13 +1,6 @@
 package com.cristian.design.patterns.weapons;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-
-@RequiredArgsConstructor
-@Getter
-public class OrcWeapon implements Weapon {
-
-  private final WeaponType weaponType;
+public record OrcWeapon(WeaponType weaponType) implements Weapon {
 
   @Override
   public String toString() {
