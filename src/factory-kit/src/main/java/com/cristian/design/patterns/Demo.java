@@ -3,11 +3,11 @@ package com.cristian.design.patterns;
 import java.util.Arrays;
 
 import com.cristian.design.patterns.factory.WeaponFactory;
-import com.cristian.design.patterns.wapons.Axe;
-import com.cristian.design.patterns.wapons.Bow;
-import com.cristian.design.patterns.wapons.Spear;
-import com.cristian.design.patterns.wapons.Sword;
-import com.cristian.design.patterns.wapons.WeaponType;
+import com.cristian.design.patterns.weapons.Axe;
+import com.cristian.design.patterns.weapons.Bow;
+import com.cristian.design.patterns.weapons.Spear;
+import com.cristian.design.patterns.weapons.Sword;
+import com.cristian.design.patterns.weapons.WeaponType;
 
 public class Demo {
 

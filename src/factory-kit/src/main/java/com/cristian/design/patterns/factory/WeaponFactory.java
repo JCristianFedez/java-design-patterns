@@ -5,8 +5,8 @@ import java.util.Map;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-import com.cristian.design.patterns.wapons.Weapon;
-import com.cristian.design.patterns.wapons.WeaponType;
+import com.cristian.design.patterns.weapons.Weapon;
+import com.cristian.design.patterns.weapons.WeaponType;
 
 public interface WeaponFactory {
 
