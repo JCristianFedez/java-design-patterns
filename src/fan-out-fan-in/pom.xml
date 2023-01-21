@@ -10,7 +10,7 @@
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
-  <artifactId>fanout-fanin</artifactId>
+  <artifactId>fan-out-fan-in</artifactId>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
