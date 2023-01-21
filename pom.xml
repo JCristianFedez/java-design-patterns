@@ -59,6 +59,7 @@
     <module>src/factory-kit</module>
     <module>src/factory-method</module>
     <module>src/fan-out-fan-in</module>
+    <module>src/feature-toggle</module>
   </modules>
   <dependencies>
     <dependency>
