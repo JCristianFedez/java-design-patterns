@@ -60,6 +60,7 @@
     <module>src/factory-method</module>
     <module>src/fan-out-fan-in</module>
     <module>src/feature-toggle</module>
+    <module>src/filterer</module>
   </modules>
   <dependencies>
     <dependency>
