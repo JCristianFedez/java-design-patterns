@@ -61,6 +61,7 @@
     <module>src/fan-out-fan-in</module>
     <module>src/feature-toggle</module>
     <module>src/filterer</module>
+    <module>src/fluent-interface</module>
   </modules>
   <dependencies>
     <dependency>
