@@ -62,6 +62,7 @@
     <module>src/feature-toggle</module>
     <module>src/filterer</module>
     <module>src/fluent-interface</module>
+    <module>src/flux</module>
   </modules>
   <dependencies>
     <dependency>
