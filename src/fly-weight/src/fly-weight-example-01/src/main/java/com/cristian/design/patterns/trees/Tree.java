@@ -5,7 +5,7 @@ import java.awt.Graphics;
 public class Tree {
   private final int cordX;
   private final int cordY;
-  private TreeType type;
+  private final TreeType type;
 
   public Tree(final int cordX, final int cordY, final TreeType type) {
     this.cordX = cordX;
