@@ -16,20 +16,20 @@ public class DemoWithCache {
     final Shape shape3 = cache.get("Medium blue rectangle");
 
     if (shape1 != shape2 && !shape1.equals(shape2)) {
-      log.info("Big green circle != Medium blue rectangle (yay!)");
+      LOGGER.info("Big green circle != Medium blue rectangle (yay!)");
     } else {
-      log.info("Big green circle == Medium blue rectangle (booo!)");
+      LOGGER.info("Big green circle == Medium blue rectangle (booo!)");
     }
 
     if (shape2 != shape3) {
-      log.info("Medium blue rectangles are two different objects (yay!)");
+      LOGGER.info("Medium blue rectangles are two different objects (yay!)");
       if (shape2.equals(shape3)) {
-        log.info("And they are identical (yay!)");
+        LOGGER.info("And they are identical (yay!)");
       } else {
-        log.info("But they are not identical (booo!)");
+        LOGGER.info("But they are not identical (booo!)");
       }
     } else {
-      log.info("Rectangle objects are the same (booo!)");
+      LOGGER.info("Rectangle objects are the same (booo!)");
     }
   }
 }

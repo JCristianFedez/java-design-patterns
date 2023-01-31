@@ -48,7 +48,7 @@ class CompressionDecorator extends DataSourceDecorator {
       bout.close();
       return Base64.getEncoder().encodeToString(bout.toByteArray());
     } catch (IOException ex) {
-      log.trace("Thrown", ex);
+      LOGGER.trace("Thrown", ex);
       return null;
     }
   }
@@ -68,7 +68,7 @@ class CompressionDecorator extends DataSourceDecorator {
       bout.close();
       return bout.toString();
     } catch (IOException ex) {
-      log.trace("Thrown", ex);
+      LOGGER.trace("Thrown", ex);
       return null;
     }
   }

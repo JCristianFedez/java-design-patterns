@@ -25,7 +25,7 @@ class FileDataSource implements DataSource {
     try (final OutputStream fos = Files.newOutputStream(file.toPath())) {
       fos.write(data.getBytes());
     } catch (IOException e) {
-      log.trace("Thrown", e);
+      LOGGER.trace("Thrown", e);
     }
   }
 
@@ -37,7 +37,7 @@ class FileDataSource implements DataSource {
       buffer = new char[(int) file.length()];
       reader.read(buffer);
     } catch (IOException e) {
-      log.trace("Thrown", e);
+      LOGGER.trace("Thrown", e);
     }
     assert buffer != null;
     return new String(buffer);

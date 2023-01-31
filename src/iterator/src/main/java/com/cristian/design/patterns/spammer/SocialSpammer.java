@@ -17,7 +17,7 @@ public class SocialSpammer {
   }
 
   public void sendSpamToFriends(final String profileEmail, final String message) {
-    log.debug("Iterando sobre amigos");
+    LOGGER.debug("Iterando sobre amigos");
     this.iterator = this.network.createFriendsIterator(profileEmail);
     while (this.iterator.hasNext()) {
       this.sendMessage(this.iterator.getNext().getEmail(), message);
@@ -25,7 +25,7 @@ public class SocialSpammer {
   }
 
   public void sendSpamToCoworkers(final String profileEmail, final String message) {
-    log.debug("Iterando sobre compañeros");
+    LOGGER.debug("Iterando sobre compañeros");
     this.iterator = this.network.createCoworkersIterator(profileEmail);
     while (this.iterator.hasNext()) {
       this.sendMessage(this.iterator.getNext().getEmail(), message);
@@ -33,6 +33,6 @@ public class SocialSpammer {
   }
 
   private void sendMessage(final String email, final String message) {
-    log.debug("Enviando mensaje a {}. Cuerpo del mensaje: {}", email, message);
+    LOGGER.debug("Enviando mensaje a {}. Cuerpo del mensaje: {}", email, message);
   }
 }

@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 public class VideoConversionFacade {
 
   public File convertVideo(final String fileName, final String format) {
-    log.debug("VideoConversionFacade: conversion started");
+    LOGGER.debug("VideoConversionFacade: conversion started");
     final VideoFile file = new VideoFile(fileName);
     final Codec sourceCodec = CodecFactory.extract(file);
     final Codec destinationCodec;
@@ -29,7 +29,7 @@ public class VideoConversionFacade {
     final VideoFile buffer = BitrateReader.read(file, sourceCodec);
     final VideoFile intermediateResult = BitrateReader.convert(buffer, destinationCodec);
     final File result = (new AudioMixer()).fix(intermediateResult);
-    log.debug("VideoConversionFacade: conversion completed");
+    LOGGER.debug("VideoConversionFacade: conversion completed");
     return result;
   }
 }

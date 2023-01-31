@@ -11,10 +11,10 @@ public class RoleCheckMiddleware extends Middleware {
   @Override
   public boolean check(final String email, final String password) {
     if (email.equals("admin@example.com")) {
-      log.debug("Hola admin!");
+      LOGGER.debug("Hola admin!");
       return true;
     }
-    log.debug("Hola usuario!");
+    LOGGER.debug("Hola usuario!");
     return this.checkNext(email, password);
   }
 }

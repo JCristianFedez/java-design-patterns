@@ -16,7 +16,7 @@ public class DemoMultiThread {
   private static Thread buildSingletonInThread(final String value) {
     return new Thread(() -> {
       final Singleton singleton = Singleton.getInstance(value);
-      log.info(singleton.toString());
+      LOGGER.info(singleton.toString());
     });
   }
 }

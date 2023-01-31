@@ -7,6 +7,6 @@ final class SimpleTask implements Task {
 
   @Override
   public void execute() {
-    log.info("Perform some important activity and after call the callback method.");
+    LOGGER.info("Perform some important activity and after call the callback method.");
   }
 }

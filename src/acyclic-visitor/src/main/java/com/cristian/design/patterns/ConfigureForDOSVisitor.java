@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 public class ConfigureForDOSVisitor implements AllModemVisitor {
 
   private static void logVisitor(final Modem zoom) {
-    log.info("{} used with DOS configurator", zoom);
+    LOGGER.info("{} used with DOS configurator", zoom);
   }
 
   @Override

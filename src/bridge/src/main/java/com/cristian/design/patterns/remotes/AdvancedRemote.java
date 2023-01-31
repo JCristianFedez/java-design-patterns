@@ -12,7 +12,7 @@ public class AdvancedRemote extends BasicRemote {
   }
 
   public void mute() {
-    log.debug("Remote: mute");
+    LOGGER.debug("Remote: mute");
     device.setVolume(0);
   }
 }

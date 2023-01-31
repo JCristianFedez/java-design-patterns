@@ -6,12 +6,12 @@ import lombok.extern.slf4j.Slf4j;
 public class BitrateReader {
 
   public static VideoFile read(final VideoFile file, final Codec codec) {
-    log.debug("BitrateReader: reading file...");
+    LOGGER.debug("BitrateReader: reading file...");
     return file;
   }
 
   public static VideoFile convert(final VideoFile buffer, final Codec codec) {
-    log.debug("BitrateReader: writing file...");
+    LOGGER.debug("BitrateReader: writing file...");
     return buffer;
   }
 }

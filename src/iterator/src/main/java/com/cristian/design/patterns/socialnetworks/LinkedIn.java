@@ -22,7 +22,7 @@ public class LinkedIn implements SocialNetwork {
     // Aquí habría una solicitud POST a uno de los puntos finales de la API de Facebook.En su lugar, emulamos una larga conexión de red, lo
     // que esperaría en la vida real...
     this.simulateNetworkLatency();
-    log.debug("LinkedIn: Cargando perfil {} en la red", profileEmail);
+    LOGGER.debug("LinkedIn: Cargando perfil {} en la red", profileEmail);
 
     return this.findContact(profileEmail);
   }
@@ -31,7 +31,7 @@ public class LinkedIn implements SocialNetwork {
     // Aquí habría una solicitud POST a uno de los puntos finales de la API de Facebook.En su lugar, emulamos una larga conexión de red, lo
     // que esperaría en la vida real...
     this.simulateNetworkLatency();
-    log.debug("LinkedIn: Cargando {} lista de {} en la red", contactType, profileEmail);
+    LOGGER.debug("LinkedIn: Cargando {} lista de {} en la red", contactType, profileEmail);
 
     final Profile profile = this.findContact(profileEmail);
     if (profile != null) {

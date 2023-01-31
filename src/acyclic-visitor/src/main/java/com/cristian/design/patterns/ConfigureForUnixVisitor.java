@@ -7,6 +7,6 @@ public class ConfigureForUnixVisitor implements ZoomVisitor {
 
   @Override
   public void visit(final Zoom zoom) {
-    log.info("{} used with Unix configuration.", zoom);
+    LOGGER.info("{} used with Unix configuration.", zoom);
   }
 }

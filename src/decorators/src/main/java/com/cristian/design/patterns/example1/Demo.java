@@ -11,11 +11,11 @@ class Demo {
     encoded.writeData(salaryRecords);
     final DataSource plain = new FileDataSource("OutputDemo.txt");
 
-    log.debug("- Input ----------------");
-    log.debug(salaryRecords);
-    log.debug("- Encoded --------------");
-    log.debug(plain.readData());
-    log.debug("- Decoded --------------");
-    log.debug(encoded.readData());
+    LOGGER.debug("- Input ----------------");
+    LOGGER.debug(salaryRecords);
+    LOGGER.debug("- Encoded --------------");
+    LOGGER.debug(plain.readData());
+    LOGGER.debug("- Decoded --------------");
+    LOGGER.debug(encoded.readData());
   }
 }

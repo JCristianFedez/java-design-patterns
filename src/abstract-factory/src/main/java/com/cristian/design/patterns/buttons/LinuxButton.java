@@ -7,6 +7,6 @@ public class LinuxButton implements Button {
 
   @Override
   public void paint() {
-    log.info("You've created LinuxButton.");
+    LOGGER.info("You've created LinuxButton.");
   }
 }

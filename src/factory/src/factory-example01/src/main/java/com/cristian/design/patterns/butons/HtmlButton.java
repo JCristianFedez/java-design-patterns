@@ -7,12 +7,12 @@ public class HtmlButton implements Button {
 
   @Override
   public void render() {
-    log.debug("<button>Test Button</button>");
+    LOGGER.debug("<button>Test Button</button>");
     this.onClick();
   }
 
   @Override
   public void onClick() {
-    log.debug("Click! Button says - 'Hello World!'");
+    LOGGER.debug("Click! Button says - 'Hello World!'");
   }
 }

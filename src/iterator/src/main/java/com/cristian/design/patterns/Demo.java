@@ -18,9 +18,9 @@ public class Demo {
   private static final Scanner scanner = new Scanner(System.in);
 
   public static void main(String[] args) {
-    log.debug("Especifique la red social para apuntar a la herramienta de spam (predeterminado: Facebook):");
-    log.debug("1. Facebook");
-    log.debug("2. LinkedIn");
+    LOGGER.debug("Especifique la red social para apuntar a la herramienta de spam (predeterminado: Facebook):");
+    LOGGER.debug("1. Facebook");
+    LOGGER.debug("2. LinkedIn");
     final String choise = scanner.nextLine();
 
     final SocialNetwork network;

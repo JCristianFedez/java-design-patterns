@@ -28,13 +28,13 @@ public class Demo {
     forest.setSize(CANVAS_SIZE, CANVAS_SIZE);
     forest.setVisible(true);
 
-    log.debug(TREES_TO_DRAW + " trees drawn");
-    log.debug("---------------------");
-    log.debug("Memory usage:");
-    log.debug("Tree size (8 bytes) * " + TREES_TO_DRAW);
-    log.debug("+ TreeTypes size (~30 bytes) * " + TREE_TYPES + "");
-    log.debug("---------------------");
-    log.debug(
+    LOGGER.debug(TREES_TO_DRAW + " trees drawn");
+    LOGGER.debug("---------------------");
+    LOGGER.debug("Memory usage:");
+    LOGGER.debug("Tree size (8 bytes) * " + TREES_TO_DRAW);
+    LOGGER.debug("+ TreeTypes size (~30 bytes) * " + TREE_TYPES + "");
+    LOGGER.debug("---------------------");
+    LOGGER.debug(
         "Total: " + ((TREES_TO_DRAW * 8 + TREE_TYPES * 30) / 1024 / 1024) + "MB (instead of " + ((TREES_TO_DRAW * 38) / 1024 / 1024)
             + "MB)");
   }

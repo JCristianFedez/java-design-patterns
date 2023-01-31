@@ -17,12 +17,12 @@ public class Demo {
   }
 
   private static void testDevice(final Device device) {
-    log.debug("Tests with basic remote");
+    LOGGER.debug("Tests with basic remote");
     final BasicRemote basicRemote = new BasicRemote(device);
     basicRemote.power();
     device.printStatus();
 
-    log.debug("Tests with advanced remote.");
+    LOGGER.debug("Tests with advanced remote.");
     final AdvancedRemote advancedRemote = new AdvancedRemote(device);
     advancedRemote.power();
     advancedRemote.mute();

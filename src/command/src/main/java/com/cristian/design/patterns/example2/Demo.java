@@ -11,30 +11,30 @@ public class Demo {
     final Wizard wizard = new Wizard();
     final Goblin goblin = new Goblin();
 
-    log.info("First status");
+    LOGGER.info("First status");
     goblin.printStatus();
 
-    log.info("Change size and print status");
+    LOGGER.info("Change size and print status");
     wizard.castSpell(goblin::changeSize);
     goblin.printStatus();
 
-    log.info("Change visibility and print status");
+    LOGGER.info("Change visibility and print status");
     wizard.castSpell(goblin::changeVisibility);
     goblin.printStatus();
 
-    log.info("Undo last spell (last spell is change visibility) and print status");
+    LOGGER.info("Undo last spell (last spell is change visibility) and print status");
     wizard.undoLastSpell();
     goblin.printStatus();
 
-    log.info("Undo last spell (last spell is change size) and print status");
+    LOGGER.info("Undo last spell (last spell is change size) and print status");
     wizard.undoLastSpell();
     goblin.printStatus();
 
-    log.info("Redo last spell (last spell is change size) and print status");
+    LOGGER.info("Redo last spell (last spell is change size) and print status");
     wizard.redoLastSpell();
     goblin.printStatus();
 
-    log.info("Redo last spell (last spell is change visiblity) and print status");
+    LOGGER.info("Redo last spell (last spell is change visiblity) and print status");
     wizard.redoLastSpell();
     goblin.printStatus();
   }

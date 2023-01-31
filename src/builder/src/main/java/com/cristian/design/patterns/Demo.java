@@ -18,14 +18,14 @@ public class Demo {
     director.constructSportsCar(builder);
     final Car car = builder.build();
 
-    log.info("Car built {}", car.toString());
+    LOGGER.info("Car built {}", car.toString());
 
     final CarBuilder manualBuilder = new CarBuilder();
     director.constructSportsCar(manualBuilder);
     manualBuilder.setSeats(200);
     final Car carManual = builder.build();
 
-    log.info("CarManual built: {}", carManual.toString());
+    LOGGER.info("CarManual built: {}", carManual.toString());
 
     final Car carBasic = Car.builder()
         .setCarType(CarType.CITY_CAR)
@@ -34,6 +34,6 @@ public class Demo {
         .setEngine(new Engine(1, 2))
         .build();
 
-    log.info("CarBasic {}", carBasic);
+    LOGGER.info("CarBasic {}", carBasic);
   }
 }

@@ -20,7 +20,7 @@ abstract class ActiveCreature {
         try {
           this.request.take().run();
         } catch (InterruptedException e) {
-          log.trace("Thrown", e);
+          LOGGER.trace("Thrown", e);
           Thread.currentThread().interrupt();
         }
       }
@@ -30,13 +30,13 @@ abstract class ActiveCreature {
 
   public void eat() throws InterruptedException {
     this.request.put(() -> {
-      log.info("{} is eating!", getName());
-      log.info("{} has finished eating!", getName());
+      LOGGER.info("{} is eating!", getName());
+      LOGGER.info("{} has finished eating!", getName());
     });
   }
 
   public void roam() throws InterruptedException {
-    this.request.put(() -> log.info("{} has started to roam the wastelands", getName()));
+    this.request.put(() -> LOGGER.info("{} has started to roam the wastelands", getName()));
   }
 
   public String getName() {

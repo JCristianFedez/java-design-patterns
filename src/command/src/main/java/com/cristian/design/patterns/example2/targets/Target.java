@@ -37,6 +37,6 @@ abstract class Target {
   public abstract String toString();
 
   public void printStatus() {
-    log.info("{}, [size={}] [visibility={}]", this, getSize(), getVisibility());
+    LOGGER.info("{}, [size={}] [visibility={}]", this, getSize(), getVisibility());
   }
 }

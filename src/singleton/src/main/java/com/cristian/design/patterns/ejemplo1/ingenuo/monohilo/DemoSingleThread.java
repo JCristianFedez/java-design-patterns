@@ -9,7 +9,7 @@ class DemoSingleThread {
     final Singleton singleton = Singleton.getInstance("FOO");
     final Singleton anotherSingleton = Singleton.getInstance("BAR");
 
-    log.debug("Singleton1: {}", singleton);
-    log.debug("Singleton2: {}", anotherSingleton);
+    LOGGER.debug("Singleton1: {}", singleton);
+    LOGGER.debug("Singleton2: {}", anotherSingleton);
   }
 }

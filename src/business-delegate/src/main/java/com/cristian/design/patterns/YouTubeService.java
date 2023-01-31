@@ -7,6 +7,6 @@ final class YouTubeService implements VideoStreamingService {
 
   @Override
   public void doProcessing() {
-    log.info("YouTubeService is now processing");
+    LOGGER.info("YouTubeService is now processing");
   }
 }

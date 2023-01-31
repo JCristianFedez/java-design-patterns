@@ -15,7 +15,7 @@ public class EngineManager {
     if (this.engine.isStarted()) {
       this.engine.setMileage(this.engine.getMileage() + mileage);
     } else {
-      log.warn("Cannot go(), you must start engine first");
+      LOGGER.warn("Cannot go(), you must start engine first");
     }
   }
 }

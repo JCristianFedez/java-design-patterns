@@ -7,6 +7,6 @@ public class NetflixService implements VideoStreamingService {
 
   @Override
   public void doProcessing() {
-    log.info("NetflixService is now processing");
+    LOGGER.info("NetflixService is now processing");
   }
 }

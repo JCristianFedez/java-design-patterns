@@ -19,10 +19,10 @@ public class UserExistsMiddleware extends Middleware {
   @Override
   public boolean check(final String email, final String password) {
     if (!this.server.hasEmail(email)) {
-      log.debug("Este email no esta registrado");
+      LOGGER.debug("Este email no esta registrado");
       return false;
     } else if (!server.isValidPassword(email, password)) {
-      log.debug("Contraseña incorrecta");
+      LOGGER.debug("Contraseña incorrecta");
       return false;
     }
     return this.checkNext(email, password);

@@ -15,6 +15,6 @@ public class EmailNotificationListener implements EventListener {
 
   @Override
   public void update(final String eventType, final File file) {
-    log.debug("Email para {}: Alguien ha actuado {} operación con el siguiente archivo {}", this.email, eventType, file.getName());
+    LOGGER.debug("Email para {}: Alguien ha actuado {} operación con el siguiente archivo {}", this.email, eventType, file.getName());
   }
 }

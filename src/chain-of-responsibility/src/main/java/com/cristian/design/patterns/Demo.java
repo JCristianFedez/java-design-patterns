@@ -24,9 +24,9 @@ public class Demo {
 
     boolean success;
     do {
-      log.debug("Introduzca email: ");
+      LOGGER.debug("Introduzca email: ");
       final String email = reader.readLine();
-      log.debug("Introduzca la contraseña: ");
+      LOGGER.debug("Introduzca la contraseña: ");
       final String password = reader.readLine();
       success = server.logIn(email, password);
     } while (!success);

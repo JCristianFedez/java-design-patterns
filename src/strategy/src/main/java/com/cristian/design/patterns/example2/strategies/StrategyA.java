@@ -7,6 +7,6 @@ public class StrategyA implements Strategy {
 
   @Override
   public void execute() {
-    log.debug("Ejecutada estrategia A");
+    LOGGER.debug("Ejecutada estrategia A");
   }
 }

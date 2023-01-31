@@ -42,14 +42,14 @@ public class Demo {
 
     for (int i = 0; i < shapes.size(); i++) {
       if (shapes.get(i) != shapesCopy.get(i)) {
-        log.info("{}: Shape different objects (yay!)", i);
+        LOGGER.info("{}: Shape different objects (yay!)", i);
         if (shapes.get(i).equals(shapesCopy.get(i))) {
-          log.info("{}: : And they are identical (yay!)", i);
+          LOGGER.info("{}: : And they are identical (yay!)", i);
         } else {
-          log.info("{}: But they are not identical (booo!)", i);
+          LOGGER.info("{}: But they are not identical (booo!)", i);
         }
       } else {
-        log.info("{}: Shape objects are the same (booo!)", i);
+        LOGGER.info("{}: Shape objects are the same (booo!)", i);
       }
     }
   }

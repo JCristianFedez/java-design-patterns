@@ -23,7 +23,7 @@ public class Facebook implements SocialNetwork {
     // que esperaría en la vida real...
     this.simulateNetworkLatency();
 
-    log.debug("Facebook: Cargando perfil {} sobre la red", profileEmail);
+    LOGGER.debug("Facebook: Cargando perfil {} sobre la red", profileEmail);
     return this.findProfile(profileEmail);
   }
 
@@ -31,7 +31,7 @@ public class Facebook implements SocialNetwork {
     // Aquí habría una solicitud POST a uno de los puntos finales de la API de Facebook.En su lugar, emulamos una larga conexión de red, lo
     // que esperaría en la vida real...
     this.simulateNetworkLatency();
-    log.debug("Facebook: Cargando {} lista de {} sobre la red", contactType, profileEmail);
+    LOGGER.debug("Facebook: Cargando {} lista de {} sobre la red", contactType, profileEmail);
 
     final Profile profile = this.findProfile(profileEmail);
     return profile != null ? profile.getContacts(contactType) : null;

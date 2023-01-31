@@ -7,6 +7,6 @@ public class WindowsButton implements Button {
 
   @Override
   public void paint() {
-    log.info("You've created WindowsButton.");
+    LOGGER.info("You've created WindowsButton.");
   }
 }

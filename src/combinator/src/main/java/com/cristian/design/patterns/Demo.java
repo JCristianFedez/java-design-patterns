@@ -12,19 +12,19 @@ public class Demo {
     final String[] queriesOr = new String[]{"many", "Annabel"};
     Finder finder = Finders.expandedFinder(queriesOr);
     List<String> res = finder.find(text());
-    log.info("the result of expanded(or) query[{}] is {}", Arrays.toString(queriesOr), res);
+    LOGGER.info("the result of expanded(or) query[{}] is {}", Arrays.toString(queriesOr), res);
 
     final String[] queriesAnd = new String[]{"Annabel", "my"};
     finder = Finders.specializedFinder(queriesAnd);
     res = finder.find(text());
-    log.info("the result of specialized(and) query[{}] is {}", Arrays.toString(queriesAnd), res);
+    LOGGER.info("the result of specialized(and) query[{}] is {}", Arrays.toString(queriesAnd), res);
 
     finder = Finders.advancedFinder("it was", "kingdom", "sea");
     res = finder.find(text());
-    log.info("the result of advanced query is {}", res);
+    LOGGER.info("the result of advanced query is {}", res);
 
     res = Finders.filteredFinder(" was ", "many", "child").find(text());
-    log.info("the result of filtered query is {}", res);
+    LOGGER.info("the result of filtered query is {}", res);
   }
 
   private static String text() {

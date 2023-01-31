@@ -28,7 +28,7 @@ public class YouTubeCacheProxy implements ThirdPartyYouTubeLib {
     if (this.cachePopular.isEmpty()) {
       this.cachePopular.putAll(this.youTubeService.popularVideos());
     } else {
-      log.debug("Lista recuperada del caché");
+      LOGGER.debug("Lista recuperada del caché");
     }
     return this.cachePopular;
   }
@@ -40,7 +40,7 @@ public class YouTubeCacheProxy implements ThirdPartyYouTubeLib {
       video = this.youTubeService.getVideo(videoId);
       cacheAll.put(videoId, video);
     } else {
-      log.debug("Video {} recuperado de cache", video);
+      LOGGER.debug("Video {} recuperado de cache", video);
     }
 
     return video;

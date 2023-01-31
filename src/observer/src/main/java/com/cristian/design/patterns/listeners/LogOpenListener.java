@@ -15,6 +15,6 @@ public class LogOpenListener implements EventListener {
 
   @Override
   public void update(final String eventType, final File file) {
-    log.debug("Guardando log {}: Alguien ha actuado {} operación con el siguiente archivo {}", this.logFile, eventType, file.getName());
+    LOGGER.debug("Guardando log {}: Alguien ha actuado {} operación con el siguiente archivo {}", this.logFile, eventType, file.getName());
   }
 }

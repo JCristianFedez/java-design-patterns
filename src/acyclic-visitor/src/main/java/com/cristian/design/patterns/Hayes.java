@@ -10,7 +10,7 @@ final class Hayes implements Modem {
     if (visitor instanceof HayesVisitor) {
       ((HayesVisitor) visitor).visit(this);
     } else {
-      log.info("Only HayesVisitor is allowed to visit Hayes modem");
+      LOGGER.info("Only HayesVisitor is allowed to visit Hayes modem");
     }
   }
 }

@@ -18,7 +18,7 @@ public class BasicRemote implements Remotes {
 
   @Override
   public void power() {
-    log.debug("Remote: power toggle");
+    LOGGER.debug("Remote: power toggle");
     if (device.isEnabled()) {
       device.disable();
     } else {
@@ -28,25 +28,25 @@ public class BasicRemote implements Remotes {
 
   @Override
   public void volumeDown() {
-    log.debug("Remote: volume down");
+    LOGGER.debug("Remote: volume down");
     device.setVolume(device.getVolume() - 10);
   }
 
   @Override
   public void volumeUp() {
-    log.debug("Remote: volume up");
+    LOGGER.debug("Remote: volume up");
     device.setVolume(device.getVolume() + 10);
   }
 
   @Override
   public void channelDown() {
-    log.debug("Remote: channel down");
+    LOGGER.debug("Remote: channel down");
     device.setChannel(device.getChannel() - 1);
   }
 
   @Override
   public void channelUp() {
-    log.debug("Remote: channel up");
+    LOGGER.debug("Remote: channel up");
     device.setChannel(device.getChannel() + 1);
   }
 }

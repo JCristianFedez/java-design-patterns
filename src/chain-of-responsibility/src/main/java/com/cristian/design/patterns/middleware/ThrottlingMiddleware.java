@@ -35,7 +35,7 @@ public class ThrottlingMiddleware extends Middleware {
     this.request++;
 
     if (this.request > this.requestPerMinute) {
-      log.debug("Limite de peticiones excedido");
+      LOGGER.debug("Limite de peticiones excedido");
       Thread.currentThread().stop();
     }
 

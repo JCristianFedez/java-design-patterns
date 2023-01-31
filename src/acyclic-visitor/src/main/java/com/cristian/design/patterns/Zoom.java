@@ -10,7 +10,7 @@ final class Zoom implements Modem {
     if (visitor instanceof ZoomVisitor) {
       ((ZoomVisitor) visitor).visit(this);
     } else {
-      log.info("Only ZoomVisitor is allowed to visit Zoom modem");
+      LOGGER.info("Only ZoomVisitor is allowed to visit Zoom modem");
     }
   }
 }

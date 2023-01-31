@@ -38,13 +38,13 @@ public class ThirdPartyYouTubeClass implements ThirdPartyYouTubeLib {
   }
 
   private void connectToServer(final String server) {
-    log.debug("Connecting to {} ...", server);
+    LOGGER.debug("Connecting to {} ...", server);
     this.experienceNetworkLatency();
-    log.debug("Connected");
+    LOGGER.debug("Connected");
   }
 
   private HashMap<String, Video> getRandomVideos() {
-    log.debug("Downloading populars... ");
+    LOGGER.debug("Downloading populars... ");
 
     this.experienceNetworkLatency();
     final HashMap<String, Video> map = new HashMap<>();
@@ -54,17 +54,17 @@ public class ThirdPartyYouTubeClass implements ThirdPartyYouTubeLib {
     map.put("dlsdk5jfslaf", new Video("dlsdk5jfslaf", "Barcelona vs RealM.mov"));
     map.put("3sdfgsd1j333", new Video("3sdfgsd1j333", "Programing lesson#1.avi"));
 
-    log.debug("Done:");
+    LOGGER.debug("Done:");
     return map;
   }
 
   private Video getSomeVideo(final String videoId) {
-    log.debug("Downloading video...");
+    LOGGER.debug("Downloading video...");
 
     this.experienceNetworkLatency();
     final Video video = new Video(videoId, "Titulo de video");
 
-    log.debug("Done");
+    LOGGER.debug("Done");
     return video;
   }
 }

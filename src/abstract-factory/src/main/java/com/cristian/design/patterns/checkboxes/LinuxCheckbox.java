@@ -7,6 +7,6 @@ public class LinuxCheckbox implements Checkbox {
 
   @Override
   public void paint() {
-    log.info("You've created LinuxCheckbox");
+    LOGGER.info("You've created LinuxCheckbox");
   }
 }

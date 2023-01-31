@@ -16,7 +16,7 @@ public class Demo {
     final long naive = test(naiveDownloader);
     final long smart = test(smartDownloader);
 
-    log.debug("Tiempo ahorrado por el cacheo del proxy: {} ms", (naive - smart));
+    LOGGER.debug("Tiempo ahorrado por el cacheo del proxy: {} ms", (naive - smart));
   }
 
   private static long test(final YouTubeDownloader downloader) {
@@ -33,7 +33,7 @@ public class Demo {
     downloader.renderVideoPage("someothervid");
 
     final long estimatedTime = System.currentTimeMillis() - startTime;
-    log.debug("Tiempo transcurrido {}", estimatedTime);
+    LOGGER.debug("Tiempo transcurrido {}", estimatedTime);
     return estimatedTime;
   }
 }

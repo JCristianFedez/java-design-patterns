@@ -26,7 +26,7 @@ public class Server {
    */
   public boolean logIn(final String email, final String password) {
     if (this.middleware.check(email, password)) {
-      log.debug("La autorización ha sido satisfactoria");
+      LOGGER.debug("La autorización ha sido satisfactoria");
       // Haga algo útil aquí para usuarios autorizados.
       return true;
     }
