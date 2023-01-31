@@ -5,12 +5,12 @@ import java.util.List;
 
 import com.cristian.design.patterns.iterators.LinkedInIterator;
 import com.cristian.design.patterns.iterators.ProfileIterator;
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.profile.Profile;
 
-public class LinkedIn implements SocialNetwork {
+import lombok.extern.slf4j.Slf4j;
 
-  private static final Logger LOGGER = Logger.fromType(LinkedIn.class);
+@Slf4j
+public class LinkedIn implements SocialNetwork {
 
   private final List<Profile> profiles;
 
@@ -22,7 +22,7 @@ public class LinkedIn implements SocialNetwork {
     // Aquí habría una solicitud POST a uno de los puntos finales de la API de Facebook.En su lugar, emulamos una larga conexión de red, lo
     // que esperaría en la vida real...
     this.simulateNetworkLatency();
-    LOGGER.debug("LinkedIn: Cargando perfil %s en la red", profileEmail);
+    log.debug("LinkedIn: Cargando perfil {} en la red", profileEmail);
 
     return this.findContact(profileEmail);
   }
@@ -31,7 +31,7 @@ public class LinkedIn implements SocialNetwork {
     // Aquí habría una solicitud POST a uno de los puntos finales de la API de Facebook.En su lugar, emulamos una larga conexión de red, lo
     // que esperaría en la vida real...
     this.simulateNetworkLatency();
-    LOGGER.debug("LinkedIn: Cargando %s lista de %s en la red", contactType, profileEmail);
+    log.debug("LinkedIn: Cargando {} lista de {} en la red", contactType, profileEmail);
 
     final Profile profile = this.findContact(profileEmail);
     if (profile != null) {

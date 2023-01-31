@@ -1,13 +1,13 @@
 package com.cristian.design.patterns;
 
 import com.cristian.design.patterns.downloader.YouTubeDownloader;
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.proxy.YouTubeCacheProxy;
 import com.cristian.design.patterns.somelibrary.ThirdPartyYouTubeClass;
 
-public class Demo {
+import lombok.extern.slf4j.Slf4j;
 
-  private static final Logger LOGGER = Logger.fromType(Demo.class);
+@Slf4j
+public class Demo {
 
   public static void main(String[] args) {
     final YouTubeDownloader naiveDownloader = new YouTubeDownloader(new ThirdPartyYouTubeClass());
@@ -16,7 +16,7 @@ public class Demo {
     final long naive = test(naiveDownloader);
     final long smart = test(smartDownloader);
 
-    LOGGER.debug("Tiempo ahorrado por el cacheo del proxy: %s ms", (naive - smart));
+    log.debug("Tiempo ahorrado por el cacheo del proxy: {} ms", (naive - smart));
   }
 
   private static long test(final YouTubeDownloader downloader) {
@@ -33,7 +33,7 @@ public class Demo {
     downloader.renderVideoPage("someothervid");
 
     final long estimatedTime = System.currentTimeMillis() - startTime;
-    LOGGER.debug("Tiempo transcurrido %s", estimatedTime);
+    log.debug("Tiempo transcurrido {}", estimatedTime);
     return estimatedTime;
   }
 }

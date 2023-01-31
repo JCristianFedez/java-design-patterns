@@ -25,6 +25,6 @@ public class Circle extends BaseShape {
   @Override
   public void paint(Graphics graphics) {
     super.paint(graphics);
-    graphics.drawOval(this.getX(), this.getY(), this.getWidth() - 1, this.getHeight() - 1);
+    graphics.drawOval(this.getCordX(), this.getCordY(), this.getWidth() - 1, this.getHeight() - 1);
   }
 }

@@ -6,12 +6,12 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.file.Files;
 
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.logger.constants.EnvParameters;
 
-class FileDataSource implements DataSource {
+import lombok.extern.slf4j.Slf4j;
 
-  private static final Logger LOGGER = Logger.fromType(FileDataSource.class);
+@Slf4j
+class FileDataSource implements DataSource {
 
   private final String name;
 
@@ -25,7 +25,7 @@ class FileDataSource implements DataSource {
     try (final OutputStream fos = Files.newOutputStream(file.toPath())) {
       fos.write(data.getBytes());
     } catch (IOException e) {
-      LOGGER.exception(e);
+      log.trace("Thrown", e);
     }
   }
 
@@ -37,7 +37,7 @@ class FileDataSource implements DataSource {
       buffer = new char[(int) file.length()];
       reader.read(buffer);
     } catch (IOException e) {
-      LOGGER.exception(e);
+      log.trace("Thrown", e);
     }
     assert buffer != null;
     return new String(buffer);

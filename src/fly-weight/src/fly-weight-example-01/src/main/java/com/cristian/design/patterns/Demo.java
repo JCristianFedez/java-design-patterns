@@ -5,8 +5,10 @@ import java.security.SecureRandom;
 import java.util.Random;
 
 import com.cristian.design.patterns.forest.Forest;
-import com.cristian.design.patterns.logger.Logger;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Demo {
 
   private static final int CANVAS_SIZE = 500;
@@ -14,8 +16,6 @@ public class Demo {
   private static final int TREES_TO_DRAW = 1000000;
 
   private static final int TREE_TYPES = 2;
-
-  private static final Logger LOGGER = Logger.fromType(Demo.class);
 
   private static final Random random = new SecureRandom();
 
@@ -28,13 +28,13 @@ public class Demo {
     forest.setSize(CANVAS_SIZE, CANVAS_SIZE);
     forest.setVisible(true);
 
-    LOGGER.debug(TREES_TO_DRAW + " trees drawn");
-    LOGGER.debug("---------------------");
-    LOGGER.debug("Memory usage:");
-    LOGGER.debug("Tree size (8 bytes) * " + TREES_TO_DRAW);
-    LOGGER.debug("+ TreeTypes size (~30 bytes) * " + TREE_TYPES + "");
-    LOGGER.debug("---------------------");
-    LOGGER.debug(
+    log.debug(TREES_TO_DRAW + " trees drawn");
+    log.debug("---------------------");
+    log.debug("Memory usage:");
+    log.debug("Tree size (8 bytes) * " + TREES_TO_DRAW);
+    log.debug("+ TreeTypes size (~30 bytes) * " + TREE_TYPES + "");
+    log.debug("---------------------");
+    log.debug(
         "Total: " + ((TREES_TO_DRAW * 8 + TREE_TYPES * 30) / 1024 / 1024) + "MB (instead of " + ((TREES_TO_DRAW * 38) / 1024 / 1024)
             + "MB)");
   }

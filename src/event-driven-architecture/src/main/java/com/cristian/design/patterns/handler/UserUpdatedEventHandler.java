@@ -7,6 +7,6 @@ public class UserUpdatedEventHandler implements Handler<UserUpdatedEvent> {
 
   @Override
   public void onEvent(final UserUpdatedEvent event) {
-    System.out.printf("User %s has been Updated!%n", event.getUser().getName());
+    System.out.printf("User {} has been Updated!%n", event.getUser().getName());
   }
 }

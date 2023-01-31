@@ -22,17 +22,17 @@ class Scene {
    */
   public void draw(final List<Coordinate> coordinates) {
     System.out.println("Start drawing next frame");
-    System.out.printf("Current buffer: %s, Next buffer: %s%n", this.current, this.next);
+    System.out.printf("Current buffer: {}, Next buffer: {}%n", this.current, this.next);
     this.frameBuffers.get(this.next).clearAll();
     coordinates.forEach(coordinate -> this.frameBuffers.get(this.next).drawPixel(coordinate));
     System.out.println("Swap current and next buffer");
     swap();
     System.out.println("Finish swapping");
-    System.out.printf("Current buffer: %s, Next buffer: %s%n", this.current, this.next);
+    System.out.printf("Current buffer: {}, Next buffer: {}%n", this.current, this.next);
   }
 
   public Buffer buffer() {
-    System.out.printf("Get current buffer: %s%n", this.current);
+    System.out.printf("Get current buffer: {}%n", this.current);
     return this.frameBuffers.get(this.current);
   }
 

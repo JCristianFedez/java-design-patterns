@@ -12,8 +12,6 @@ class Demo {
     new Demo().run();
   }
 
-  // TODO: 8/1/23 Debugear y ver para que se encolen y esperen 
-
   private void run() throws UnsupportedAudioFileException, IOException, InterruptedException {
     final Audio audio = Audio.getInstance();
     audio.playSound(audio.getAudioStream("Bass-Drum-1.wav"), -10.0f);

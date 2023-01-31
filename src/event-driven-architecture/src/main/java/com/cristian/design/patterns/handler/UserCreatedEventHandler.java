@@ -7,7 +7,7 @@ public class UserCreatedEventHandler implements Handler<UserCreatedEvent> {
 
   @Override
   public void onEvent(UserCreatedEvent event) {
-    System.out.printf("User %s has been Created!%n", event.getUser().getName());
+    System.out.printf("User {} has been Created!%n", event.getUser().getName());
   }
 
 }

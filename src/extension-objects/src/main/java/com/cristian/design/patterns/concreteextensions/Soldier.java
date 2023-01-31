@@ -7,6 +7,6 @@ public record Soldier(SoldierUnit soldierUnit) implements SoldierExtension {
 
   @Override
   public void soldierReady() {
-    System.out.printf("[Soldier] %s is ready!%n", this.soldierUnit.getName());
+    System.out.printf("[Soldier] {} is ready!%n", this.soldierUnit.getName());
   }
 }

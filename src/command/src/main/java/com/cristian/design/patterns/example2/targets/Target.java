@@ -2,11 +2,11 @@ package com.cristian.design.patterns.example2.targets;
 
 import com.cristian.design.patterns.example2.Size;
 import com.cristian.design.patterns.example2.Visibility;
-import com.cristian.design.patterns.logger.Logger;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 abstract class Target {
-
-  private static final Logger LOGGER = Logger.fromType(Target.class);
 
   private Size size;
 
@@ -37,6 +37,6 @@ abstract class Target {
   public abstract String toString();
 
   public void printStatus() {
-    LOGGER.info("%s, [size=%s] [visibility=%s]", this, getSize(), getVisibility());
+    log.info("{}, [size={}] [visibility={}]", this, getSize(), getVisibility());
   }
 }

@@ -1,13 +1,12 @@
 package com.cristian.design.patterns.checkboxes;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class LinuxCheckbox implements Checkbox {
-
-  private static final Logger LOGGER = Logger.fromType(Checkbox.class);
 
   @Override
   public void paint() {
-    LOGGER.info("You've created LinuxCheckbox");
+    log.info("You've created LinuxCheckbox");
   }
 }

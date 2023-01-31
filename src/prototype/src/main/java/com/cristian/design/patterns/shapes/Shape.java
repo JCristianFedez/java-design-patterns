@@ -4,29 +4,29 @@ import java.util.Objects;
 
 public abstract class Shape {
 
-  private int x;
+  private int cordX;
 
-  private int y;
+  private int cordY;
 
   private String color;
 
-  public Shape() {
+  protected Shape() {
   }
 
-  public Shape(final Shape target) {
+  protected Shape(final Shape target) {
     if (target != null) {
-      this.x = target.x;
-      this.y = target.y;
+      this.cordX = target.cordX;
+      this.cordY = target.cordY;
       this.color = target.color;
     }
   }
 
-  public void setX(int x) {
-    this.x = x;
+  public void setCordX(int cordX) {
+    this.cordX = cordX;
   }
 
-  public void setY(int y) {
-    this.y = y;
+  public void setCordY(int cordY) {
+    this.cordY = cordY;
   }
 
   public void setColor(String color) {
@@ -40,15 +40,14 @@ public abstract class Shape {
     if (this == o) {
       return true;
     }
-    if (!(o instanceof Shape)) {
+    if (!(o instanceof Shape shape)) {
       return false;
     }
-    Shape shape = (Shape) o;
-    return x == shape.x && y == shape.y && Objects.equals(color, shape.color);
+    return cordX == shape.cordX && cordY == shape.cordY && Objects.equals(color, shape.color);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(x, y, color);
+    return Objects.hash(cordX, cordY, color);
   }
 }

@@ -2,14 +2,14 @@ package com.cristian.design.patterns.proxy;
 
 import java.util.HashMap;
 
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.somelibrary.ThirdPartyYouTubeClass;
 import com.cristian.design.patterns.somelibrary.ThirdPartyYouTubeLib;
 import com.cristian.design.patterns.somelibrary.Video;
 
-public class YouTubeCacheProxy implements ThirdPartyYouTubeLib {
+import lombok.extern.slf4j.Slf4j;
 
-  private static final Logger LOGGER = Logger.fromType(YouTubeCacheProxy.class);
+@Slf4j
+public class YouTubeCacheProxy implements ThirdPartyYouTubeLib {
 
   private final ThirdPartyYouTubeLib youTubeService;
 
@@ -28,7 +28,7 @@ public class YouTubeCacheProxy implements ThirdPartyYouTubeLib {
     if (this.cachePopular.isEmpty()) {
       this.cachePopular.putAll(this.youTubeService.popularVideos());
     } else {
-      LOGGER.debug("Lista recuperada del caché");
+      log.debug("Lista recuperada del caché");
     }
     return this.cachePopular;
   }
@@ -40,7 +40,7 @@ public class YouTubeCacheProxy implements ThirdPartyYouTubeLib {
       video = this.youTubeService.getVideo(videoId);
       cacheAll.put(videoId, video);
     } else {
-      LOGGER.debug("Video %s recuperado de cache", video);
+      log.debug("Video {} recuperado de cache", video);
     }
 
     return video;

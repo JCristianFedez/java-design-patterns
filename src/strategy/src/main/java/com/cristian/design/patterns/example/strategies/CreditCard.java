@@ -5,13 +5,13 @@ package com.cristian.design.patterns.example.strategies;
  */
 public class CreditCard {
 
-  private int amount;
-
   private final String number;
 
   private final String date;
 
   private final String cvv;
+
+  private int amount;
 
   CreditCard(String number, String date, String cvv) {
     this.amount = 100_000;

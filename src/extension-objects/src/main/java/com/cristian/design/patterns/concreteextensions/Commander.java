@@ -7,6 +7,6 @@ public record Commander(CommanderUnit commanderUnit) implements CommanderExtensi
 
   @Override
   public void commanderReady() {
-    System.out.printf("[Commander] %s is ready!%n", this.commanderUnit.getName());
+    System.out.printf("[Commander] {} is ready!%n", this.commanderUnit.getName());
   }
 }

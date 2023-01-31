@@ -27,7 +27,7 @@ class DataFetcher {
     final File file = new File(Objects.requireNonNull(getClass().getResource(FILE_NAME)).getFile());
 
     if (isDirty(file.lastModified())) {
-      System.out.printf("%s is dirty! Re-fetching file content...%n", FILE_NAME);
+      System.out.printf("{} is dirty! Re-fetching file content...%n", FILE_NAME);
       try (final BufferedReader br = new BufferedReader(new FileReader(file))) {
         return br.lines().collect(Collectors.toList());
       } catch (final IOException e) {

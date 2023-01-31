@@ -4,6 +4,6 @@ class KingJoffrey implements EventObserver {
 
   @Override
   public void onEvent(final Event event) {
-    System.out.printf("Received event from the King's Hand: %s%n", event.toString());
+    System.out.printf("Received event from the King's Hand: {}%n", event.toString());
   }
 }

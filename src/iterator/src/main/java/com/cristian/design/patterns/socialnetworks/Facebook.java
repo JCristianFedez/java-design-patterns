@@ -5,12 +5,12 @@ import java.util.List;
 
 import com.cristian.design.patterns.iterators.FacebookIterator;
 import com.cristian.design.patterns.iterators.ProfileIterator;
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.profile.Profile;
 
-public class Facebook implements SocialNetwork {
+import lombok.extern.slf4j.Slf4j;
 
-  private static final Logger LOGGER = Logger.fromType(Facebook.class);
+@Slf4j
+public class Facebook implements SocialNetwork {
 
   private final List<Profile> profiles;
 
@@ -23,7 +23,7 @@ public class Facebook implements SocialNetwork {
     // que esperaría en la vida real...
     this.simulateNetworkLatency();
 
-    LOGGER.debug("Facebook: Cargando perfil %s sobre la red", profileEmail);
+    log.debug("Facebook: Cargando perfil {} sobre la red", profileEmail);
     return this.findProfile(profileEmail);
   }
 
@@ -31,7 +31,7 @@ public class Facebook implements SocialNetwork {
     // Aquí habría una solicitud POST a uno de los puntos finales de la API de Facebook.En su lugar, emulamos una larga conexión de red, lo
     // que esperaría en la vida real...
     this.simulateNetworkLatency();
-    LOGGER.debug("Facebook: Cargando %s lista de %s sobre la red", contactType, profileEmail);
+    log.debug("Facebook: Cargando {} lista de {} sobre la red", contactType, profileEmail);
 
     final Profile profile = this.findProfile(profileEmail);
     return profile != null ? profile.getContacts(contactType) : null;

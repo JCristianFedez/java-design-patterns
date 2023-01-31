@@ -2,7 +2,6 @@ package com.cristian.design.patterns;
 
 import java.io.File;
 
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.somecomplexmedialibrary.AudioMixer;
 import com.cristian.design.patterns.somecomplexmedialibrary.BitrateReader;
 import com.cristian.design.patterns.somecomplexmedialibrary.Codec;
@@ -11,12 +10,13 @@ import com.cristian.design.patterns.somecomplexmedialibrary.MPEG4CompressionCode
 import com.cristian.design.patterns.somecomplexmedialibrary.OggCompressionCodec;
 import com.cristian.design.patterns.somecomplexmedialibrary.VideoFile;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class VideoConversionFacade {
 
-  private static final Logger LOGGER = Logger.fromType(VideoConversionFacade.class);
-
   public File convertVideo(final String fileName, final String format) {
-    LOGGER.debug("VideoConversionFacade: conversion started");
+    log.debug("VideoConversionFacade: conversion started");
     final VideoFile file = new VideoFile(fileName);
     final Codec sourceCodec = CodecFactory.extract(file);
     final Codec destinationCodec;
@@ -29,7 +29,7 @@ public class VideoConversionFacade {
     final VideoFile buffer = BitrateReader.read(file, sourceCodec);
     final VideoFile intermediateResult = BitrateReader.convert(buffer, destinationCodec);
     final File result = (new AudioMixer()).fix(intermediateResult);
-    LOGGER.debug("VideoConversionFacade: conversion completed");
+    log.debug("VideoConversionFacade: conversion completed");
     return result;
   }
 }

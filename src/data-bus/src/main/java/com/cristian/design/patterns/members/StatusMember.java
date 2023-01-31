@@ -31,13 +31,13 @@ public class StatusMember implements Member {
 
   private void handleEvent(final StartingData data) {
     this.started = data.getWhen();
-    System.out.printf("Reciver %s sees application started at %s%n", this.id, this.started);
+    System.out.printf("Reciver {} sees application started at {}%n", this.id, this.started);
   }
 
   private void handleEvent(final StoppingData data) {
     this.stopped = data.getWhen();
-    System.out.printf("Reciver %s sees application stopping at %s%n", this.id, this.stopped);
-    System.out.printf("Reciver %s sending goodbye message%n", this.id);
+    System.out.printf("Reciver {} sees application stopping at {}%n", this.id, this.stopped);
+    System.out.printf("Reciver {} sending goodbye message%n", this.id);
     data.getDataBus().publish(MessageData.of(String.format("Goodbye cruel world form #%d!%n", this.id)));
   }
 }

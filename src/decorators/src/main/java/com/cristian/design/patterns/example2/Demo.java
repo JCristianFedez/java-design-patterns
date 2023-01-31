@@ -7,12 +7,12 @@ class Demo {
     final SimpleTroll troll = new SimpleTroll();
     troll.attack();
     troll.fleeBattle();
-    System.out.printf("Simple troll power: %s%n", troll.attackPower());
+    System.out.printf("Simple troll power: {}%n", troll.attackPower());
 
     System.out.println("A troll with huge club surprise you");
     final ClubbedTroll clubbedTroll = new ClubbedTroll(troll);
     clubbedTroll.attack();
     clubbedTroll.fleeBattle();
-    System.out.printf("Clubbed troll power: %s%n", clubbedTroll.attackPower());
+    System.out.printf("Clubbed troll power: {}%n", clubbedTroll.attackPower());
   }
 }

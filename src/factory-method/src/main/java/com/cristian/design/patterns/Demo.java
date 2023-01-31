@@ -8,7 +8,7 @@ import com.cristian.design.patterns.weapons.WeaponType;
 
 public class Demo {
 
-  private static final String MANUFACTURED = "%s manufactured %s%n";
+  private static final String MANUFACTURED = "{} manufactured {}%n";
 
   public static void main(String[] args) {
     new Demo().run();

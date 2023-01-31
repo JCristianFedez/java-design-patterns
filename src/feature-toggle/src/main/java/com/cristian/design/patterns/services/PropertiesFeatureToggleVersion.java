@@ -25,7 +25,7 @@ public class PropertiesFeatureToggleVersion implements Service {
   @Override
   public String welcomeMessage(final User user) {
     if (isEnhanced()) {
-      return String.format("Welcome %s. You're using the enhanced welcome message.", user);
+      return String.format("Welcome {}. You're using the enhanced welcome message.", user);
     }
     return "Welcome to the application";
   }

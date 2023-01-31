@@ -5,7 +5,7 @@ import java.awt.Graphics;
 
 public class Dot extends BaseShape {
 
-  private final int DOT_SIZE = 3;
+  private static final int DOT_SIZE = 3;
 
   public Dot(int x, int y, Color color) {
     super(x, y, color);
@@ -24,6 +24,6 @@ public class Dot extends BaseShape {
   @Override
   public void paint(Graphics graphics) {
     super.paint(graphics);
-    graphics.fillRect(this.getX() - 1, this.getY() - 1, this.getWidth(), this.getHeight());
+    graphics.fillRect(this.getCordX() - 1, this.getCordY() - 1, this.getWidth(), this.getHeight());
   }
 }

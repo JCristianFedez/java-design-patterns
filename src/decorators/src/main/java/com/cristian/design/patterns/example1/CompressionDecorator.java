@@ -9,11 +9,10 @@ import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 class CompressionDecorator extends DataSourceDecorator {
-
-  private static final Logger LOGGER = Logger.fromType(CompressionDecorator.class);
 
   private int compLevel = 6;
 
@@ -49,7 +48,7 @@ class CompressionDecorator extends DataSourceDecorator {
       bout.close();
       return Base64.getEncoder().encodeToString(bout.toByteArray());
     } catch (IOException ex) {
-      LOGGER.exception(ex);
+      log.trace("Thrown", ex);
       return null;
     }
   }
@@ -69,7 +68,7 @@ class CompressionDecorator extends DataSourceDecorator {
       bout.close();
       return bout.toString();
     } catch (IOException ex) {
-      LOGGER.exception(ex);
+      log.trace("Thrown", ex);
       return null;
     }
   }

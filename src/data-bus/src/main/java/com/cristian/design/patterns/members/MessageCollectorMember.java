@@ -24,7 +24,7 @@ public class MessageCollectorMember implements Member {
   }
 
   private void handleEvent(MessageData data) {
-    System.out.printf("%s sees message %s%n", this.name, data.getMessage());
+    System.out.printf("{} sees message {}%n", this.name, data.getMessage());
     this.messages.add(data.getMessage());
   }
 

@@ -9,5 +9,5 @@ interface Task {
     Optional.ofNullable(callback).ifPresent(Callback::call);
   }
 
-  public abstract void execute();
+  void execute();
 }

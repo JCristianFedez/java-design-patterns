@@ -26,14 +26,14 @@ public class BundledShapeCache {
 
   private void loadDefaultCache() {
     final Circle circle = new Circle();
-    circle.setX(5);
-    circle.setY(7);
+    circle.setCordX(5);
+    circle.setCordY(7);
     circle.setRadious(45);
     circle.setColor("Green");
 
     final Rectangle rectangle = new Rectangle();
-    rectangle.setX(6);
-    rectangle.setY(9);
+    rectangle.setCordX(6);
+    rectangle.setCordY(9);
     rectangle.setWidth(8);
     rectangle.setHeight(10);
     rectangle.setColor("Blue");

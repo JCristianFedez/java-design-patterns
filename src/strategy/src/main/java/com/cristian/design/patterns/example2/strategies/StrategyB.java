@@ -1,13 +1,12 @@
 package com.cristian.design.patterns.example2.strategies;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class StrategyB implements Strategy {
-
-  private static final Logger LOGGER = Logger.fromType(StrategyB.class);
 
   @Override
   public void execute() {
-    LOGGER.debug("Ejecutada estrategia B");
+    log.debug("Ejecutada estrategia B");
   }
 }

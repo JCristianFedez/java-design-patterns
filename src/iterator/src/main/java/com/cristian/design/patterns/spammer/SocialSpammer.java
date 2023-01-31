@@ -1,12 +1,12 @@
 package com.cristian.design.patterns.spammer;
 
 import com.cristian.design.patterns.iterators.ProfileIterator;
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.socialnetworks.SocialNetwork;
 
-public class SocialSpammer {
+import lombok.extern.slf4j.Slf4j;
 
-  private static final Logger LOGGER = Logger.fromType(SocialSpammer.class);
+@Slf4j
+public class SocialSpammer {
 
   private final SocialNetwork network;
 
@@ -17,7 +17,7 @@ public class SocialSpammer {
   }
 
   public void sendSpamToFriends(final String profileEmail, final String message) {
-    LOGGER.debug("Iterando sobre amigos");
+    log.debug("Iterando sobre amigos");
     this.iterator = this.network.createFriendsIterator(profileEmail);
     while (this.iterator.hasNext()) {
       this.sendMessage(this.iterator.getNext().getEmail(), message);
@@ -25,7 +25,7 @@ public class SocialSpammer {
   }
 
   public void sendSpamToCoworkers(final String profileEmail, final String message) {
-    LOGGER.debug("Iterando sobre compañeros");
+    log.debug("Iterando sobre compañeros");
     this.iterator = this.network.createCoworkersIterator(profileEmail);
     while (this.iterator.hasNext()) {
       this.sendMessage(this.iterator.getNext().getEmail(), message);
@@ -33,6 +33,6 @@ public class SocialSpammer {
   }
 
   private void sendMessage(final String email, final String message) {
-    LOGGER.debug("Enviando mensaje a %s. Cuerpo del mensaje: %s", email, message);
+    log.debug("Enviando mensaje a {}. Cuerpo del mensaje: {}", email, message);
   }
 }

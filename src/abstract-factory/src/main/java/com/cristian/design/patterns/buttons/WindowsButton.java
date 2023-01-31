@@ -1,13 +1,12 @@
 package com.cristian.design.patterns.buttons;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class WindowsButton implements Button {
-
-  private static final Logger LOGGER = Logger.fromType(Button.class);
 
   @Override
   public void paint() {
-    LOGGER.info("You've created WindowsButton.");
+    log.info("You've created WindowsButton.");
   }
 }

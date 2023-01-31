@@ -7,6 +7,7 @@ import com.cristian.design.patterns.ejemplo01.adapters.square.SquarePeg;
  * El adaptador permite colocar SquarePegs en RoundHoles.
  */
 public class SquarePegAdapter extends RoundPeg {
+
   private final SquarePeg peg;
 
   public SquarePegAdapter(SquarePeg peg) {

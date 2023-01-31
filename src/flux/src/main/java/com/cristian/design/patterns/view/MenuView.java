@@ -19,7 +19,7 @@ public class MenuView implements View {
   public void render() {
     for (final MenuItem item : MenuItem.values()) {
       if (item.equals(this.selected)) {
-        System.out.printf("* %s%n", item);
+        System.out.printf("* {}%n", item);
       } else {
         System.out.println(item);
       }

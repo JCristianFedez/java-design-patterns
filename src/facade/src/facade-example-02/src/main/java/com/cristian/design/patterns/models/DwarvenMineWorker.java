@@ -5,19 +5,19 @@ import java.util.Arrays;
 public abstract class DwarvenMineWorker {
 
   public void goToSleep() {
-    System.out.printf("%s goes to sleep.%n", name());
+    System.out.printf("{} goes to sleep.%n", name());
   }
 
   public void wakeUp() {
-    System.out.printf("%s wake up.%n", name());
+    System.out.printf("{} wake up.%n", name());
   }
 
   public void goHome() {
-    System.out.printf("%s goes home.%n", name());
+    System.out.printf("{} goes home.%n", name());
   }
 
   public void goToMine() {
-    System.out.printf("%s goes to the mine.%n", name());
+    System.out.printf("{} goes to the mine.%n", name());
   }
 
   public void actions(final Action... actions) {

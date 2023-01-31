@@ -1,12 +1,12 @@
 package com.cristian.design.patterns;
 
 import com.cristian.design.patterns.cache.BundledShapeCache;
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.shapes.Shape;
 
-public class DemoWithCache {
+import lombok.extern.slf4j.Slf4j;
 
-  private static final Logger LOGGER = Logger.fromType(DemoWithCache.class);
+@Slf4j
+public class DemoWithCache {
 
   public static void main(String[] args) {
     final BundledShapeCache cache = new BundledShapeCache();
@@ -16,20 +16,20 @@ public class DemoWithCache {
     final Shape shape3 = cache.get("Medium blue rectangle");
 
     if (shape1 != shape2 && !shape1.equals(shape2)) {
-      LOGGER.info("Big green circle != Medium blue rectangle (yay!)");
+      log.info("Big green circle != Medium blue rectangle (yay!)");
     } else {
-      LOGGER.info("Big green circle == Medium blue rectangle (booo!)");
+      log.info("Big green circle == Medium blue rectangle (booo!)");
     }
 
     if (shape2 != shape3) {
-      LOGGER.info("Medium blue rectangles are two different objects (yay!)");
+      log.info("Medium blue rectangles are two different objects (yay!)");
       if (shape2.equals(shape3)) {
-        LOGGER.info("And they are identical (yay!)");
+        log.info("And they are identical (yay!)");
       } else {
-        LOGGER.info("But they are not identical (booo!)");
+        log.info("But they are not identical (booo!)");
       }
     } else {
-      LOGGER.info("Rectangle objects are the same (booo!)");
+      log.info("Rectangle objects are the same (booo!)");
     }
   }
 }

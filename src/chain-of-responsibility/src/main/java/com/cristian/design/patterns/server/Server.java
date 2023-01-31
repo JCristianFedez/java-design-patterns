@@ -3,12 +3,12 @@ package com.cristian.design.patterns.server;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.middleware.Middleware;
 
-public class Server {
+import lombok.extern.slf4j.Slf4j;
 
-  private static final Logger LOGGER = Logger.fromType(Server.class);
+@Slf4j
+public class Server {
 
   private final Map<String, String> users = new HashMap<>();
 
@@ -26,7 +26,7 @@ public class Server {
    */
   public boolean logIn(final String email, final String password) {
     if (this.middleware.check(email, password)) {
-      LOGGER.debug("La autorización ha sido satisfactoria");
+      log.debug("La autorización ha sido satisfactoria");
       // Haga algo útil aquí para usuarios autorizados.
       return true;
     }

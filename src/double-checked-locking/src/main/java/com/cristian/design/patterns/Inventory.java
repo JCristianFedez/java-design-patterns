@@ -27,7 +27,7 @@ class Inventory {
         if (this.items.size() < this.inventorySize) {
           this.items.add(item);
           final Thread thread = Thread.currentThread();
-          System.out.printf("%s: items.size()=%s, inventorySize=%s%n", thread, this.items.size(), this.inventorySize);
+          System.out.printf("{}: items.size()={}, inventorySize={}%n", thread, this.items.size(), this.inventorySize);
           return true;
         }
       } finally {

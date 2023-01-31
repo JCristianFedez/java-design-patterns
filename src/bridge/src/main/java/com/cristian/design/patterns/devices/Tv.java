@@ -1,10 +1,9 @@
 package com.cristian.design.patterns.devices;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class Tv implements Device {
-
-  private static final Logger LOGGER = Logger.fromType(Radio.class);
 
   private boolean on = false;
 
@@ -55,11 +54,11 @@ public class Tv implements Device {
 
   @Override
   public void printStatus() {
-    LOGGER.debug("------------------------------------");
-    LOGGER.debug("| I'm TV set.");
-    LOGGER.debug("| I'm " + (on ? "enabled" : "disabled"));
-    LOGGER.debug("| Current volume is " + volume + " percent");
-    LOGGER.debug("| Current channel is " + channel);
-    LOGGER.debug("------------------------------------\n");
+    log.debug("------------------------------------");
+    log.debug("| I'm TV set.");
+    log.debug("| I'm " + (on ? "enabled" : "disabled"));
+    log.debug("| Current volume is " + volume + " percent");
+    log.debug("| Current channel is " + channel);
+    log.debug("------------------------------------\n");
   }
 }

@@ -1,11 +1,11 @@
 package com.cristian.design.patterns.remotes;
 
 import com.cristian.design.patterns.devices.Device;
-import com.cristian.design.patterns.logger.Logger;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class BasicRemote implements Remotes {
-
-  private static final Logger LOGGER = Logger.fromType(BasicRemote.class);
 
   protected Device device;
 
@@ -18,7 +18,7 @@ public class BasicRemote implements Remotes {
 
   @Override
   public void power() {
-    LOGGER.debug("Remote: power toggle");
+    log.debug("Remote: power toggle");
     if (device.isEnabled()) {
       device.disable();
     } else {
@@ -28,25 +28,25 @@ public class BasicRemote implements Remotes {
 
   @Override
   public void volumeDown() {
-    LOGGER.debug("Remote: volume down");
+    log.debug("Remote: volume down");
     device.setVolume(device.getVolume() - 10);
   }
 
   @Override
   public void volumeUp() {
-    LOGGER.debug("Remote: volume up");
+    log.debug("Remote: volume up");
     device.setVolume(device.getVolume() + 10);
   }
 
   @Override
   public void channelDown() {
-    LOGGER.debug("Remote: channel down");
+    log.debug("Remote: channel down");
     device.setChannel(device.getChannel() - 1);
   }
 
   @Override
   public void channelUp() {
-    LOGGER.debug("Remote: channel up");
+    log.debug("Remote: channel up");
     device.setChannel(device.getChannel() + 1);
   }
 }

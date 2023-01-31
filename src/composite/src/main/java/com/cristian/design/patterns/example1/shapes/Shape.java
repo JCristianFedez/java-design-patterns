@@ -4,9 +4,9 @@ import java.awt.Graphics;
 
 public interface Shape {
 
-  int getX();
+  int getCordX();
 
-  int getY();
+  int getCordY();
 
   int getWidth();
 

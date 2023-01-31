@@ -18,13 +18,6 @@ class Demo {
     System.out.println();
   }
 
-  private void run() {
-    final List<GameObject> objects = initializeGameObjects();
-    collisionChecks(objects);
-    printGameObjects(objects);
-    System.exit(0);
-  }
-
   private static void printGameObjects(final List<GameObject> objects) {
     objects.stream().map(GameObject::toString).forEach(System.out::println);
     System.out.println();
@@ -39,5 +32,12 @@ class Demo {
     );
     printGameObjects(objects);
     return objects;
+  }
+
+  private void run() {
+    final List<GameObject> objects = initializeGameObjects();
+    collisionChecks(objects);
+    printGameObjects(objects);
+    System.exit(0);
   }
 }

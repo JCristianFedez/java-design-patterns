@@ -2,11 +2,10 @@ package com.cristian.design.patterns.listeners;
 
 import java.io.File;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class EmailNotificationListener implements EventListener {
-
-  private static final Logger LOGGER = Logger.fromType(EmailNotificationListener.class);
 
   private final String email;
 
@@ -16,6 +15,6 @@ public class EmailNotificationListener implements EventListener {
 
   @Override
   public void update(final String eventType, final File file) {
-    LOGGER.debug("Email para %s: Alguien ha actuado %s operación con el siguiente archivo %s", this.email, eventType, file.getName());
+    log.debug("Email para {}: Alguien ha actuado {} operación con el siguiente archivo {}", this.email, eventType, file.getName());
   }
 }

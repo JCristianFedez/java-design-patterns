@@ -4,13 +4,12 @@ import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.Random;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class ThirdPartyYouTubeClass implements ThirdPartyYouTubeLib {
 
   private static final Random random = new SecureRandom();
-
-  private static final Logger LOGGER = Logger.fromType(ThirdPartyYouTubeClass.class);
 
   @Override
   public HashMap<String, Video> popularVideos() {
@@ -39,13 +38,13 @@ public class ThirdPartyYouTubeClass implements ThirdPartyYouTubeLib {
   }
 
   private void connectToServer(final String server) {
-    LOGGER.debug("Connecting to %s ...", server);
+    log.debug("Connecting to {} ...", server);
     this.experienceNetworkLatency();
-    LOGGER.debug("Connected");
+    log.debug("Connected");
   }
 
   private HashMap<String, Video> getRandomVideos() {
-    LOGGER.debug("Downloading populars... ");
+    log.debug("Downloading populars... ");
 
     this.experienceNetworkLatency();
     final HashMap<String, Video> map = new HashMap<>();
@@ -55,17 +54,17 @@ public class ThirdPartyYouTubeClass implements ThirdPartyYouTubeLib {
     map.put("dlsdk5jfslaf", new Video("dlsdk5jfslaf", "Barcelona vs RealM.mov"));
     map.put("3sdfgsd1j333", new Video("3sdfgsd1j333", "Programing lesson#1.avi"));
 
-    LOGGER.debug("Done:");
+    log.debug("Done:");
     return map;
   }
 
   private Video getSomeVideo(final String videoId) {
-    LOGGER.debug("Downloading video...");
+    log.debug("Downloading video...");
 
     this.experienceNetworkLatency();
     final Video video = new Video(videoId, "Titulo de video");
 
-    LOGGER.debug("Done");
+    log.debug("Done");
     return video;
   }
 }

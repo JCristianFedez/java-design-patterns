@@ -41,7 +41,7 @@ public class EventManager implements ThreadCompleteListener {
       throws MaxNumOfEventsAllowedException, InvalidOperationException, LongRunningEventException {
     if (this.currentlyRunningSyncEvent != -1) {
       final String msg =
-          String.format("Event [%s] is still running. Please wait until it finishes and try again.", this.currentlyRunningSyncEvent);
+          String.format("Event [{}] is still running. Please wait until it finishes and try again.", this.currentlyRunningSyncEvent);
       throw new InvalidOperationException(msg);
     }
 
@@ -68,7 +68,7 @@ public class EventManager implements ThreadCompleteListener {
     }
 
     if (eventTime >= MAX_EVENT_TIME_IN_SECONDS) {
-      final String msg = String.format("Maximum event time allowed is %s seconds. Please try again.", MAX_EVENT_TIME_IN_SECONDS);
+      final String msg = String.format("Maximum event time allowed is {} seconds. Please try again.", MAX_EVENT_TIME_IN_SECONDS);
       throw new LongRunningEventException(msg);
     }
 
@@ -129,7 +129,7 @@ public class EventManager implements ThreadCompleteListener {
 
   private void checkIfEventExistsInPool(final int eventId) throws EventDoesNotExistException {
     if (!this.eventPool.containsKey(eventId)) {
-      throw new EventDoesNotExistException(String.format("%s does not exists", eventId));
+      throw new EventDoesNotExistException(String.format("{} does not exists", eventId));
     }
   }
 

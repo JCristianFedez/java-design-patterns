@@ -29,13 +29,12 @@ public class Circle extends Shape {
     if (this == o) {
       return true;
     }
-    if (!(o instanceof Circle)) {
+    if (!(o instanceof Circle circle)) {
       return false;
     }
     if (!super.equals(o)) {
       return false;
     }
-    Circle circle = (Circle) o;
     return radious == circle.radious;
   }
 

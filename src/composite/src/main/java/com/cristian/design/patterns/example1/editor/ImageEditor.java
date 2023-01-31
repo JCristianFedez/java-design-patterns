@@ -67,12 +67,12 @@ public class ImageEditor {
 
     @Override
     public int getWidth() {
-      return allShapes.getX() + allShapes.getWidth() + PADDING;
+      return allShapes.getCordX() + allShapes.getWidth() + PADDING;
     }
 
     @Override
     public int getHeight() {
-      return allShapes.getY() + allShapes.getHeight() + PADDING;
+      return allShapes.getCordY() + allShapes.getHeight() + PADDING;
     }
 
     void refresh() {

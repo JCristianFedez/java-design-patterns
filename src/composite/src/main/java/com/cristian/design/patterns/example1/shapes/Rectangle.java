@@ -28,6 +28,6 @@ public class Rectangle extends BaseShape {
   @Override
   public void paint(Graphics graphics) {
     super.paint(graphics);
-    graphics.drawRect(this.getX(), this.getY(), this.getWidth() - 1, this.getHeight() - 1);
+    graphics.drawRect(this.getCordX(), this.getCordY(), this.getWidth() - 1, this.getHeight() - 1);
   }
 }

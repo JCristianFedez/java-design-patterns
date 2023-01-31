@@ -3,29 +3,28 @@ package com.cristian.design.patterns;
 import java.util.Arrays;
 import java.util.List;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class Demo {
-
-  private static final Logger LOGGER = Logger.fromType(Demo.class);
 
   public static void main(String[] args) {
     final String[] queriesOr = new String[]{"many", "Annabel"};
     Finder finder = Finders.expandedFinder(queriesOr);
     List<String> res = finder.find(text());
-    LOGGER.info("the result of expanded(or) query[%s] is %s", Arrays.toString(queriesOr), res);
+    log.info("the result of expanded(or) query[{}] is {}", Arrays.toString(queriesOr), res);
 
     final String[] queriesAnd = new String[]{"Annabel", "my"};
     finder = Finders.specializedFinder(queriesAnd);
     res = finder.find(text());
-    LOGGER.info("the result of specialized(and) query[%s] is %s", Arrays.toString(queriesAnd), res);
+    log.info("the result of specialized(and) query[{}] is {}", Arrays.toString(queriesAnd), res);
 
     finder = Finders.advancedFinder("it was", "kingdom", "sea");
     res = finder.find(text());
-    LOGGER.info("the result of advanced query is %s", res);
+    log.info("the result of advanced query is {}", res);
 
     res = Finders.filteredFinder(" was ", "many", "child").find(text());
-    LOGGER.info("the result of filtered query is %s", res);
+    log.info("the result of filtered query is {}", res);
   }
 
   private static String text() {

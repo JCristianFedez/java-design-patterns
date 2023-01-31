@@ -30,13 +30,13 @@ public class CompoundShape extends BaseShape {
   }
 
   @Override
-  public int getX() {
-    return this.getMaxCord(Shape::getX);
+  public int getCordX() {
+    return this.getMaxCord(Shape::getCordX);
   }
 
   @Override
-  public int getY() {
-    return this.getMaxCord(Shape::getY);
+  public int getCordY() {
+    return this.getMaxCord(Shape::getCordY);
   }
 
   private int getMaxCord(final Function<Shape, Integer> getCord) {
@@ -67,7 +67,7 @@ public class CompoundShape extends BaseShape {
   public void paint(Graphics graphics) {
     if (this.isSelected()) {
       enableSelectionStyle(graphics);
-      graphics.drawRect(this.getX() - 1, this.getY() - 1, this.getWidth() + 1, this.getHeight() + 1);
+      graphics.drawRect(this.getCordX() - 1, this.getCordY() - 1, this.getWidth() + 1, this.getHeight() + 1);
       disableSelectionStyle(graphics);
     }
 

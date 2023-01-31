@@ -37,7 +37,7 @@ public class FluentInterfaceDemo {
         .fromCopyOf(integers)
         .filter(number -> number % 2 == 0)
         .first()
-        .ifPresent(evenNumber -> System.out.printf("The first even number is %s%n", evenNumber));
+        .ifPresent(evenNumber -> System.out.printf("The first even number is {}%n", evenNumber));
 
     final List<String> transformedList = SimpleFluentIterable
         .fromCopyOf(integers)
@@ -60,7 +60,7 @@ public class FluentInterfaceDemo {
         .filter(negatives())
         .first(2)
         .last()
-        .ifPresent(number -> System.out.printf("Last amongst first two negatives: %s%n", number));
+        .ifPresent(number -> System.out.printf("Last amongst first two negatives: {}%n", number));
   }
 
   private Function<Integer, String> transformToString() {

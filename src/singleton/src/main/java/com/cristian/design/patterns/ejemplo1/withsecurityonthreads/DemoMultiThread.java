@@ -1,10 +1,9 @@
 package com.cristian.design.patterns.ejemplo1.withsecurityonthreads;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class DemoMultiThread {
-
-  private static final Logger LOGGER = Logger.fromType(DemoMultiThread.class);
 
   public static void main(String[] args) {
     final Thread threadFoo = buildSingletonInThread("FOO");
@@ -17,7 +16,7 @@ public class DemoMultiThread {
   private static Thread buildSingletonInThread(final String value) {
     return new Thread(() -> {
       final Singleton singleton = Singleton.getInstance(value);
-      LOGGER.info(singleton.toString());
+      log.info(singleton.toString());
     });
   }
 }

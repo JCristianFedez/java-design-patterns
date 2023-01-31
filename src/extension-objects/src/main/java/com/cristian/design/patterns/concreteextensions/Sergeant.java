@@ -7,6 +7,6 @@ public record Sergeant(SergeantUnit sergeantUnit) implements SergeantExtension {
 
   @Override
   public void sergeantReady() {
-    System.out.printf("[Sergeant] %s is ready!%n", this.sergeantUnit.getName());
+    System.out.printf("[Sergeant] {} is ready!%n", this.sergeantUnit.getName());
   }
 }

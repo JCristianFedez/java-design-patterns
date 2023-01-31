@@ -100,11 +100,11 @@ class Audio {
       clip.open(audioStream);
       clip.start();
     } catch (LineUnavailableException e) {
-      System.err.printf("Error occoured while loading the audio: The line is unavailable %s%n", e);
+      System.err.printf("Error occoured while loading the audio: The line is unavailable {}%n", e);
     } catch (IOException e) {
-      System.err.printf("Input/Output error while loading the audio %s%n", e);
+      System.err.printf("Input/Output error while loading the audio {}%n", e);
     } catch (IllegalArgumentException e) {
-      System.err.printf("The system doesn't support the sound: %s - %s%n" + e.getMessage(), e);
+      System.err.printf("The system doesn't support the sound: {} - {}%n" + e.getMessage(), e);
     }
   }
 

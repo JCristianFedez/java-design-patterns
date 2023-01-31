@@ -4,16 +4,16 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.middleware.Middleware;
 import com.cristian.design.patterns.middleware.RoleCheckMiddleware;
 import com.cristian.design.patterns.middleware.ThrottlingMiddleware;
 import com.cristian.design.patterns.middleware.UserExistsMiddleware;
 import com.cristian.design.patterns.server.Server;
 
-public class Demo {
+import lombok.extern.slf4j.Slf4j;
 
-  private static final Logger LOGGER = Logger.fromType(Demo.class);
+@Slf4j
+public class Demo {
 
   private static final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -24,9 +24,9 @@ public class Demo {
 
     boolean success;
     do {
-      LOGGER.debug("Introduzca email: ");
+      log.debug("Introduzca email: ");
       final String email = reader.readLine();
-      LOGGER.debug("Introduzca la contraseña: ");
+      log.debug("Introduzca la contraseña: ");
       final String password = reader.readLine();
       success = server.logIn(email, password);
     } while (!success);

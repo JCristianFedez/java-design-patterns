@@ -3,11 +3,10 @@ package com.cristian.design.patterns;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 abstract class ActiveCreature {
-
-  private static final Logger LOGGER = Logger.fromType(ActiveCreature.class);
 
   private final BlockingQueue<Runnable> request;
 
@@ -21,7 +20,7 @@ abstract class ActiveCreature {
         try {
           this.request.take().run();
         } catch (InterruptedException e) {
-          LOGGER.exception(e);
+          log.trace("Thrown", e);
           Thread.currentThread().interrupt();
         }
       }
@@ -31,13 +30,13 @@ abstract class ActiveCreature {
 
   public void eat() throws InterruptedException {
     this.request.put(() -> {
-      LOGGER.info("%s is eating!", getName());
-      LOGGER.info("%s has finished eating!", getName());
+      log.info("{} is eating!", getName());
+      log.info("{} has finished eating!", getName());
     });
   }
 
   public void roam() throws InterruptedException {
-    this.request.put(() -> LOGGER.info("%s has started to roam the wastelands", getName()));
+    this.request.put(() -> log.info("{} has started to roam the wastelands", getName()));
   }
 
   public String getName() {

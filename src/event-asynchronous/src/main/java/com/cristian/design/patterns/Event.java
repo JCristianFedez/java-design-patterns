@@ -37,9 +37,9 @@ public class Event implements IEvent, Runnable {
   @Override
   public void status() {
     if (!this.isComplete) {
-      System.out.printf("[%s] is not done.%n", this.eventId);
+      System.out.printf("[{}] is not done.%n", this.eventId);
     } else {
-      System.out.printf("[%s] is done.%n", this.eventId);
+      System.out.printf("[{}] is done.%n", this.eventId);
     }
   }
 

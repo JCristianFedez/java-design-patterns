@@ -9,6 +9,6 @@ public class DwarvenTunnelDigger extends DwarvenMineWorker {
 
   @Override
   public void work() {
-    System.out.printf("%s creates another promising tunnel.%n", name());
+    System.out.printf("{} creates another promising tunnel.%n", name());
   }
 }

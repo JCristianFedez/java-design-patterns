@@ -21,13 +21,13 @@ public class Twitter extends Network {
 
   @Override
   public boolean sendData(final byte[] data) {
-    System.out.printf("Mensaje: %s fue posteado en Twitter%n", new String(data));
+    System.out.printf("Mensaje: {} fue posteado en Twitter%n", new String(data));
     return true;
   }
 
   @Override
   public void logOut() {
-    System.out.printf("Usuario %s ha cerrado sesión en Twitter%n", this.getUserName());
+    System.out.printf("Usuario {} ha cerrado sesión en Twitter%n", this.getUserName());
   }
 
   private void simulateNetworkLatency() {

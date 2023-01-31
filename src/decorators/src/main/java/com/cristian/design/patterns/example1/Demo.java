@@ -1,9 +1,9 @@
 package com.cristian.design.patterns.example1;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 class Demo {
-  private static final Logger LOGGER = Logger.fromType(Demo.class);
 
   public static void main(String[] args) {
     final String salaryRecords = "Name,Salary\nJohn Smith,100000\nSteven Jobs,912000";
@@ -11,11 +11,11 @@ class Demo {
     encoded.writeData(salaryRecords);
     final DataSource plain = new FileDataSource("OutputDemo.txt");
 
-    LOGGER.debug("- Input ----------------");
-    LOGGER.debug(salaryRecords);
-    LOGGER.debug("- Encoded --------------");
-    LOGGER.debug(plain.readData());
-    LOGGER.debug("- Decoded --------------");
-    LOGGER.debug(encoded.readData());
+    log.debug("- Input ----------------");
+    log.debug(salaryRecords);
+    log.debug("- Encoded --------------");
+    log.debug(plain.readData());
+    log.debug("- Decoded --------------");
+    log.debug(encoded.readData());
   }
 }

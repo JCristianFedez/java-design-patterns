@@ -19,7 +19,7 @@ public class Player {
   public Player() {
     this.state = new ReadyState(this);
     for (int i = 0; i < 12; i++) {
-      this.playList.add(String.format("Track %s", i));
+      this.playList.add(String.format("Track {}", i));
     }
   }
 
@@ -40,7 +40,7 @@ public class Player {
   }
 
   public String startPlayback() {
-    return String.format("Playing %s", this.currentPlayList());
+    return String.format("Playing {}", this.currentPlayList());
   }
 
   public String nextTrack() {

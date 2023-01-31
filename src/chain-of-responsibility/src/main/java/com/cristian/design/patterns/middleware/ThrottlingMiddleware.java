@@ -1,13 +1,12 @@
 package com.cristian.design.patterns.middleware;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * Manejador concreto. Comprueba si hay demasiadas solicitudes de inicio de sesión fallidas.
  */
+@Slf4j
 public class ThrottlingMiddleware extends Middleware {
-
-  private static final Logger LOGGER = Logger.fromType(ThrottlingMiddleware.class);
 
   private final int requestPerMinute;
 
@@ -36,7 +35,7 @@ public class ThrottlingMiddleware extends Middleware {
     this.request++;
 
     if (this.request > this.requestPerMinute) {
-      LOGGER.debug("Limite de peticiones excedido");
+      log.debug("Limite de peticiones excedido");
       Thread.currentThread().stop();
     }
 

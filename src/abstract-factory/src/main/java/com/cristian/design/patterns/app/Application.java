@@ -2,7 +2,6 @@ package com.cristian.design.patterns.app;
 
 import com.cristian.design.patterns.buttons.Button;
 import com.cristian.design.patterns.checkboxes.Checkbox;
-
 import com.cristian.design.patterns.factories.Factory;
 
 /**

@@ -13,11 +13,6 @@ public class Demo {
     new Demo().run();
   }
 
-  private void run() throws IOException {
-    createFile();
-    printFileContent();
-  }
-
   private static void createFile() throws IOException {
     final FileWriterAction writeHello = writer -> writer.write("Gandalf was here");
     new SimpleFileWriter(FILENAME, writeHello);
@@ -30,5 +25,10 @@ public class Demo {
         System.out.println(scanner.nextLine());
       }
     }
+  }
+
+  private void run() throws IOException {
+    createFile();
+    printFileContent();
   }
 }

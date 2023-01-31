@@ -1,10 +1,9 @@
 package com.cristian.design.patterns.components.engine;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class EngineManager {
-
-  private static final Logger LOGGER = Logger.fromType(EngineManager.class);
 
   private final Engine engine;
 
@@ -16,7 +15,7 @@ public class EngineManager {
     if (this.engine.isStarted()) {
       this.engine.setMileage(this.engine.getMileage() + mileage);
     } else {
-      LOGGER.warn("Cannot go(), you must start engine first");
+      log.warn("Cannot go(), you must start engine first");
     }
   }
 }

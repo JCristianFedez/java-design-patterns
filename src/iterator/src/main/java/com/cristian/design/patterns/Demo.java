@@ -4,23 +4,23 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.profile.Profile;
 import com.cristian.design.patterns.socialnetworks.Facebook;
 import com.cristian.design.patterns.socialnetworks.LinkedIn;
 import com.cristian.design.patterns.socialnetworks.SocialNetwork;
 import com.cristian.design.patterns.spammer.SocialSpammer;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Demo {
 
   private static final Scanner scanner = new Scanner(System.in);
 
-  private static final Logger LOGGER = Logger.fromType(Demo.class);
-
   public static void main(String[] args) {
-    LOGGER.debug("Especifique la red social para apuntar a la herramienta de spam (predeterminado: Facebook):");
-    LOGGER.debug("1. Facebook");
-    LOGGER.debug("2. LinkedIn");
+    log.debug("Especifique la red social para apuntar a la herramienta de spam (predeterminado: Facebook):");
+    log.debug("1. Facebook");
+    log.debug("2. LinkedIn");
     final String choise = scanner.nextLine();
 
     final SocialNetwork network;

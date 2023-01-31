@@ -32,12 +32,12 @@ public class FiltererDemo {
 
     final ThreatAwareSystem simpleThreatAwareSystem = new SimpleThreatAwareSystem("Sys-1", threats);
 
-    System.out.printf("Filtering ThreatAwareSystem. Initial : %s%n", simpleThreatAwareSystem);
+    System.out.printf("Filtering ThreatAwareSystem. Initial : {}%n", simpleThreatAwareSystem);
 
     final ThreatAwareSystem rootkitThreatAwareSystem =
         simpleThreatAwareSystem.filtered().by(threat -> ThreatType.ROOTKIT.equals(threat.type()));
 
-    System.out.printf("Filtered by threatType = ROOTKIT : %s%n", rootkitThreatAwareSystem);
+    System.out.printf("Filtered by threatType = ROOTKIT : {}%n", rootkitThreatAwareSystem);
   }
 
   private void filteringSimpleProbableThreats() {
@@ -50,12 +50,12 @@ public class FiltererDemo {
     final ProbabilisticThreatAwareSystem probabilisticThreatAwareSystem =
         new SimpleProbabilisticThreatAwareSystem("Sys-1", probableThreats);
 
-    System.out.printf("Filtering ProbabilisticThreatAwareSystem. Initial : %s%n", probabilisticThreatAwareSystem);
+    System.out.printf("Filtering ProbabilisticThreatAwareSystem. Initial : {}%n", probabilisticThreatAwareSystem);
 
     //Filtering using filterer
     final ProbabilisticThreatAwareSystem filteredThreatAwareSystem = probabilisticThreatAwareSystem.filtered()
         .by(probableThreat -> Double.compare(probableThreat.probability(), 0.99) == 0);
 
-    System.out.printf("Filtered by probability = 0.99 : %s%n", filteredThreatAwareSystem);
+    System.out.printf("Filtered by probability = 0.99 : {}%n", filteredThreatAwareSystem);
   }
 }

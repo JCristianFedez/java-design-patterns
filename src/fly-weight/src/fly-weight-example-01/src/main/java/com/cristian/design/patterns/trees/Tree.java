@@ -3,8 +3,11 @@ package com.cristian.design.patterns.trees;
 import java.awt.Graphics;
 
 public class Tree {
+
   private final int cordX;
+
   private final int cordY;
+
   private final TreeType type;
 
   public Tree(final int cordX, final int cordY, final TreeType type) {

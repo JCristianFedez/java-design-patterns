@@ -3,6 +3,7 @@ package com.cristian.design.patterns;
 import java.util.StringJoiner;
 
 class UserDto {
+
   private final String firstName;
 
   private final String lastName;

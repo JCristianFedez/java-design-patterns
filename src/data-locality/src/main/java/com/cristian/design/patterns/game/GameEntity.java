@@ -13,7 +13,7 @@ public class GameEntity {
   private final RenderComponentManager renderComponentManager;
 
   public GameEntity(final int numEntities) {
-    System.out.printf("Init Game With #Entity : %s%n", numEntities);
+    System.out.printf("Init Game With #Entity : {}%n", numEntities);
     this.aiComponentManager = new AiComponentManager(numEntities);
     this.physicsComponentManager = new PhysicsComponentManager(numEntities);
     this.renderComponentManager = new RenderComponentManager(numEntities);

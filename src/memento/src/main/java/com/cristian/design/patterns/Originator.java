@@ -1,25 +1,24 @@
 package com.cristian.design.patterns;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class Originator {
-
-  private static final Logger LOGGER = Logger.fromType(Originator.class);
 
   private String state;
 
   public void setState(final String state) {
-    LOGGER.debug("Modificando estado a %s", state);
+    log.debug("Modificando estado a {}", state);
     this.state = state;
   }
 
   public Memento saveToMemento() {
-    LOGGER.debug("Guardando en Memento.");
+    log.debug("Guardando en Memento.");
     return new Memento(this.state);
   }
 
   public void restoreToMemento(final Memento memento) {
     this.state = memento.getSavedState();
-    LOGGER.debug("Estado después de restaurar desde Memento %s: ", this.state);
+    log.debug("Estado después de restaurar desde Memento {}: ", this.state);
   }
 }

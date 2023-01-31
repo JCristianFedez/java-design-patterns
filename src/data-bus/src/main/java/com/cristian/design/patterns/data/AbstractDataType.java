@@ -8,5 +8,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public abstract class AbstractDataType implements DataType {
+
   private DataBus dataBus;
 }

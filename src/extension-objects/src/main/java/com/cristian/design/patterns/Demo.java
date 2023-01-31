@@ -43,7 +43,7 @@ public class Demo {
 
   private void checkExtensionForUnit(final Unit unit) {
     final String name = unit.getName();
-    final Function<String, Runnable> func = extension -> () -> System.out.printf("%s without %s%n", name, extension);
+    final Function<String, Runnable> func = extension -> () -> System.out.printf("{} without {}%n", name, extension);
 
     Optional.ofNullable(unit.getUnitExtension(SoldierExtension.class.getSimpleName()))
         .map(SoldierExtension.class::cast)

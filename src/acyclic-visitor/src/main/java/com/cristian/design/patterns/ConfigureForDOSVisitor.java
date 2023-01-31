@@ -1,22 +1,21 @@
 package com.cristian.design.patterns;
 
-import com.cristian.design.patterns.logger.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class ConfigureForDOSVisitor implements AllModemVisitor {
 
-  private static final Logger LOGGER = Logger.fromType(ConfigureForDOSVisitor.class);
-
-  private static void loggerVisitor(final Modem zoom) {
-    LOGGER.info("%s used with DOS configurator", zoom);
+  private static void logVisitor(final Modem zoom) {
+    log.info("{} used with DOS configurator", zoom);
   }
 
   @Override
   public void visit(final Hayes hayes) {
-    loggerVisitor(hayes);
+    logVisitor(hayes);
   }
 
   @Override
   public void visit(final Zoom zoom) {
-    loggerVisitor(zoom);
+    logVisitor(zoom);
   }
 }

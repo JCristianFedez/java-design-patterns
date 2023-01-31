@@ -3,22 +3,22 @@ package com.cristian.design.patterns;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.shapes.Circle;
 import com.cristian.design.patterns.shapes.Rectangle;
 import com.cristian.design.patterns.shapes.Shape;
 
-public class Demo {
+import lombok.extern.slf4j.Slf4j;
 
-  private static final Logger LOGGER = Logger.fromType(Demo.class);
+@Slf4j
+public class Demo {
 
   public static void main(String[] args) {
     final List<Shape> shapes = new ArrayList<>();
     final List<Shape> shapesCopy = new ArrayList<>();
 
     final Circle circle = new Circle();
-    circle.setX(10);
-    circle.setY(20);
+    circle.setCordX(10);
+    circle.setCordY(20);
     circle.setRadious(15);
     circle.setColor("red");
     shapes.add(circle);
@@ -42,14 +42,14 @@ public class Demo {
 
     for (int i = 0; i < shapes.size(); i++) {
       if (shapes.get(i) != shapesCopy.get(i)) {
-        LOGGER.info("%s: Shape different objects (yay!)", i);
+        log.info("{}: Shape different objects (yay!)", i);
         if (shapes.get(i).equals(shapesCopy.get(i))) {
-          LOGGER.info("%s: : And they are identical (yay!)", i);
+          log.info("{}: : And they are identical (yay!)", i);
         } else {
-          LOGGER.info("%s: But they are not identical (booo!)", i);
+          log.info("{}: But they are not identical (booo!)", i);
         }
       } else {
-        LOGGER.info("%s: Shape objects are the same (booo!)", i);
+        log.info("{}: Shape objects are the same (booo!)", i);
       }
     }
   }

@@ -37,13 +37,12 @@ public class Rectangle extends Shape {
     if (this == o) {
       return true;
     }
-    if (!(o instanceof Rectangle)) {
+    if (!(o instanceof Rectangle rectangle)) {
       return false;
     }
     if (!super.equals(o)) {
       return false;
     }
-    Rectangle rectangle = (Rectangle) o;
     return width == rectangle.width && height == rectangle.height;
   }
 

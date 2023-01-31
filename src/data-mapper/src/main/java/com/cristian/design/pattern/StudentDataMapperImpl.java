@@ -19,7 +19,7 @@ public class StudentDataMapperImpl implements StudentDataMapper {
   @Override
   public void insert(final Student studentToBeInserted) throws DataMapperException {
     if (find(studentToBeInserted.getStudentId()).isPresent()) {
-      throw new DataMapperException(String.format("Student already [%s] exists", studentToBeInserted.getStudentId()));
+      throw new DataMapperException(String.format("Student already [{}] exists", studentToBeInserted.getStudentId()));
     }
     this.cache.put(studentToBeInserted.getStudentId(), studentToBeInserted);
   }
@@ -27,7 +27,7 @@ public class StudentDataMapperImpl implements StudentDataMapper {
   @Override
   public void update(final Student studentToBeUpdated) throws DataMapperException {
     if (!find(studentToBeUpdated.getStudentId()).isPresent()) {
-      throw new DataMapperException(String.format("Student [%s] is not found", studentToBeUpdated.getName()));
+      throw new DataMapperException(String.format("Student [{}] is not found", studentToBeUpdated.getName()));
     }
     this.cache.put(studentToBeUpdated.getStudentId(), studentToBeUpdated);
   }
@@ -35,7 +35,7 @@ public class StudentDataMapperImpl implements StudentDataMapper {
   @Override
   public void delete(final Student studentToBeDeleted) throws DataMapperException {
     if (this.cache.remove(studentToBeDeleted.getStudentId()) == null) {
-      throw new DataMapperException(String.format("Student [%s] is not found", studentToBeDeleted.getName()));
+      throw new DataMapperException(String.format("Student [{}] is not found", studentToBeDeleted.getName()));
     }
   }
 

@@ -18,7 +18,7 @@ public class PayByPayPal implements PayStrategy {
     DATA_BASE.put("qwerty", "john@amazon.eu");
   }
 
-  private final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
+  private static final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
 
   private String email;
 

@@ -12,7 +12,7 @@ abstract class GameObject extends Rectangle {
 
   @Override
   public String toString() {
-    return String.format("%s at %s damaged=%b onFire=%b", this.getClass().getSimpleName(),
+    return String.format("{} at {} damaged=%b onFire=%b", this.getClass().getSimpleName(),
         super.toString(), isDamaged(), isOnFire());
   }
 

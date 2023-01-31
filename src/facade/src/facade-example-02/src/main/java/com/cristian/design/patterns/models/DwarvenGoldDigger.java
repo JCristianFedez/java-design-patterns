@@ -9,6 +9,6 @@ public class DwarvenGoldDigger extends DwarvenMineWorker {
 
   @Override
   public void work() {
-    System.out.printf("%s digs for gold.%n", name());
+    System.out.printf("{} digs for gold.%n", name());
   }
 }

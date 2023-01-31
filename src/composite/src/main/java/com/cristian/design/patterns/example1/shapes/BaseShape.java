@@ -11,24 +11,24 @@ public class BaseShape implements Shape {
 
   private boolean selected = false;
 
-  private int x;
+  private int cordX;
 
-  private int y;
+  private int cordY;
 
-  public BaseShape(int x, int y, Color color) {
-    this.x = x;
-    this.y = y;
+  public BaseShape(int cordX, int cordY, Color color) {
+    this.cordX = cordX;
+    this.cordY = cordY;
     this.color = color;
   }
 
   @Override
-  public int getX() {
-    return this.x;
+  public int getCordX() {
+    return this.cordX;
   }
 
   @Override
-  public int getY() {
-    return this.y;
+  public int getCordY() {
+    return this.cordY;
   }
 
   @Override
@@ -43,14 +43,14 @@ public class BaseShape implements Shape {
 
   @Override
   public void move(int x, int y) {
-    this.x += x;
-    this.y += y;
+    this.cordX += x;
+    this.cordY += y;
   }
 
   @Override
   public boolean isInsideBounds(int x, int y) {
-    return this.x > this.getX() && this.getX() < (this.getX() + this.getWidth())
-        && this.y > this.getY() && this.getY() < (this.getY() + this.getHeight());
+    return this.cordX > this.getCordX() && this.getCordX() < (this.getCordX() + this.getWidth())
+        && this.cordY > this.getCordY() && this.getCordY() < (this.getCordY() + this.getHeight());
   }
 
   @Override

@@ -1,14 +1,14 @@
 package com.cristian.design.patterns.middleware;
 
-import com.cristian.design.patterns.logger.Logger;
 import com.cristian.design.patterns.server.Server;
 
-/**
- *  Manejador concreto. Comprueba si existe un usuario con las credenciales proporcionadas.
- */
-public class UserExistsMiddleware extends Middleware {
+import lombok.extern.slf4j.Slf4j;
 
-  private static final Logger LOGGER = Logger.fromType(UserExistsMiddleware.class);
+/**
+ * Manejador concreto. Comprueba si existe un usuario con las credenciales proporcionadas.
+ */
+@Slf4j
+public class UserExistsMiddleware extends Middleware {
 
   private final Server server;
 
@@ -19,10 +19,10 @@ public class UserExistsMiddleware extends Middleware {
   @Override
   public boolean check(final String email, final String password) {
     if (!this.server.hasEmail(email)) {
-      LOGGER.debug("Este email no esta registrado");
+      log.debug("Este email no esta registrado");
       return false;
     } else if (!server.isValidPassword(email, password)) {
-      LOGGER.debug("Contraseña incorrecta");
+      log.debug("Contraseña incorrecta");
       return false;
     }
     return this.checkNext(email, password);
