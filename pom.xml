@@ -111,6 +111,7 @@
     <module>src/filterer</module>
     <module>src/fluent-interface</module>
     <module>src/flux</module>
+    <module>src/front-controller</module>
   </modules>
   <packaging>pom</packaging>
 
