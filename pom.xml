@@ -112,6 +112,7 @@
     <module>src/fluent-interface</module>
     <module>src/flux</module>
     <module>src/front-controller</module>
+    <module>src/game-loop</module>
   </modules>
   <packaging>pom</packaging>
 
