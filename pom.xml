@@ -113,6 +113,7 @@
     <module>src/flux</module>
     <module>src/front-controller</module>
     <module>src/game-loop</module>
+    <module>src/guarded-suspension</module>
   </modules>
   <packaging>pom</packaging>
 
