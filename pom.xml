@@ -114,6 +114,7 @@
     <module>src/front-controller</module>
     <module>src/game-loop</module>
     <module>src/guarded-suspension</module>
+    <module>src/half-sync-half-async</module>
   </modules>
   <packaging>pom</packaging>
 
