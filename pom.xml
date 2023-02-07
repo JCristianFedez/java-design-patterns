@@ -115,6 +115,7 @@
     <module>src/game-loop</module>
     <module>src/guarded-suspension</module>
     <module>src/half-sync-half-async</module>
+    <module>src/identity-map</module>
   </modules>
   <packaging>pom</packaging>
 
