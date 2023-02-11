@@ -8,7 +8,7 @@ public class OrderFilter extends AbstractFilter {
   public String execute(final Order order) {
     final String result = super.execute(order);
     if (order.getOrderItem() == null || order.getOrderItem().isEmpty()) {
-      return result.concat("Invalid address! ");
+      return result.concat("Invalid order! ");
     }
     return result;
   }
