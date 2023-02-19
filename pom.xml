@@ -118,6 +118,7 @@
     <module>src/identity-map</module>
     <module>src/intercepting-filter</module>
     <module>src/interpreter</module>
+    <module>src/lazy-loading</module>
   </modules>
   <packaging>pom</packaging>
 
