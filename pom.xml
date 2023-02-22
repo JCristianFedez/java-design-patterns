@@ -119,6 +119,7 @@
     <module>src/intercepting-filter</module>
     <module>src/interpreter</module>
     <module>src/lazy-loading</module>
+    <module>src/leader-followers</module>
   </modules>
   <packaging>pom</packaging>
 
