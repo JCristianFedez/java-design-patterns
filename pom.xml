@@ -120,6 +120,7 @@
     <module>src/interpreter</module>
     <module>src/lazy-loading</module>
     <module>src/leader-followers</module>
+    <module>src/lockable-object</module>
   </modules>
   <packaging>pom</packaging>
 
