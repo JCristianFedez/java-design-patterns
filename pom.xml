@@ -121,6 +121,7 @@
     <module>src/lazy-loading</module>
     <module>src/leader-followers</module>
     <module>src/lockable-object</module>
+    <module>src/marker</module>
   </modules>
   <packaging>pom</packaging>
 
