@@ -122,6 +122,7 @@
     <module>src/leader-followers</module>
     <module>src/lockable-object</module>
     <module>src/marker</module>
+    <module>src/master-worker</module>
   </modules>
   <packaging>pom</packaging>
 
