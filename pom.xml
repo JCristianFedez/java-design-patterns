@@ -123,6 +123,7 @@
     <module>src/lockable-object</module>
     <module>src/marker</module>
     <module>src/master-worker</module>
+    <module>src/mediator</module>
   </modules>
   <packaging>pom</packaging>
 
