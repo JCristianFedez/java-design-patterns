@@ -127,6 +127,7 @@
     <module>src/memento/src/memento-example-01</module>
     <module>src/memento/src/memento-example-02</module>
     <module>src/model-view-controller</module>
+    <module>src/model-view-intent</module>
   </modules>
   <packaging>pom</packaging>
 
