@@ -129,6 +129,7 @@
     <module>src/model-view-controller</module>
     <module>src/model-view-intent</module>
     <module>src/module</module>
+    <module>src/monad</module>
   </modules>
   <packaging>pom</packaging>
 
