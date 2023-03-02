@@ -130,6 +130,7 @@
     <module>src/model-view-intent</module>
     <module>src/module</module>
     <module>src/monad</module>
+    <module>src/monitor</module>
   </modules>
   <packaging>pom</packaging>
 
