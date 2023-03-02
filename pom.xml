@@ -132,6 +132,7 @@
     <module>src/monad</module>
     <module>src/monitor</module>
     <module>src/monostate</module>
+    <module>src/multiton</module>
   </modules>
   <packaging>pom</packaging>
 
