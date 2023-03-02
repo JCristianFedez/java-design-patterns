@@ -131,6 +131,7 @@
     <module>src/module</module>
     <module>src/monad</module>
     <module>src/monitor</module>
+    <module>src/monostate</module>
   </modules>
   <packaging>pom</packaging>
 
