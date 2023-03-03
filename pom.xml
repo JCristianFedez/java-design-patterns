@@ -133,6 +133,7 @@
     <module>src/monitor</module>
     <module>src/monostate</module>
     <module>src/multiton</module>
+    <module>src/mute-idiom</module>
   </modules>
   <packaging>pom</packaging>
 
