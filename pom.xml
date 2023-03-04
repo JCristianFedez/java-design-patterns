@@ -136,6 +136,7 @@
     <module>src/mute-idiom</module>
     <module>src/null-object</module>
     <module>src/object-mother</module>
+    <module>src/object-pool</module>
   </modules>
   <packaging>pom</packaging>
 
