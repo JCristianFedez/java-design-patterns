@@ -135,6 +135,7 @@
     <module>src/multiton</module>
     <module>src/mute-idiom</module>
     <module>src/null-object</module>
+    <module>src/object-mother</module>
   </modules>
   <packaging>pom</packaging>
 
