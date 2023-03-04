@@ -134,6 +134,7 @@
     <module>src/monostate</module>
     <module>src/multiton</module>
     <module>src/mute-idiom</module>
+    <module>src/null-object</module>
   </modules>
   <packaging>pom</packaging>
 
