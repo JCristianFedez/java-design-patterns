@@ -137,6 +137,7 @@
     <module>src/null-object</module>
     <module>src/object-mother</module>
     <module>src/object-pool</module>
+    <module>src/observer/src/observer-example-01</module>
   </modules>
   <packaging>pom</packaging>
 
