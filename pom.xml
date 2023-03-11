@@ -141,6 +141,7 @@
     <module>src/observer/src/observer-example-02</module>
     <module>src/parameter-object</module>
     <module>src/partial-response</module>
+    <module>src/pipeline</module>
   </modules>
   <packaging>pom</packaging>
 
