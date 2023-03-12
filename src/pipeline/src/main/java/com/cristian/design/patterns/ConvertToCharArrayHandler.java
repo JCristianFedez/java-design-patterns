@@ -12,7 +12,7 @@ public class ConvertToCharArrayHandler implements Handler<String, char[]> {
     final char[] characters = input.toCharArray();
     final String string = Arrays.toString(characters);
     LOGGER.info("Current handler: {}, input is {} of type {}, output is {}, of type {}",
-        ConvertToCharArrayHandler.class, input, String.class, string, Character[].class);
+        ConvertToCharArrayHandler.class.getSimpleName(), input, String.class.getSimpleName(), string, Character[].class.getSimpleName());
     return characters;
   }
 

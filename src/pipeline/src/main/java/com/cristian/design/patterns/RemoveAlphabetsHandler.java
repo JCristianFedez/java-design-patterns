@@ -18,7 +18,8 @@ public class RemoveAlphabetsHandler implements Handler<String, String> {
 
     final String inputWithoutAlphabetsStr = inputWithoutAlphabets.toString();
     LOGGER.info("Current handler: {}, input is {} of type {}, output is {}, of type {}",
-        RemoveAlphabetsHandler.class, input, String.class, inputWithoutAlphabetsStr, String.class);
+        RemoveAlphabetsHandler.class.getSimpleName(), input, String.class.getSimpleName(), inputWithoutAlphabetsStr,
+        String.class.getSimpleName());
 
     return inputWithoutAlphabetsStr;
   }

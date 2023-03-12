@@ -1,5 +1,10 @@
 package com.cristian.design.patterns;
 
+import java.util.Arrays;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class PipelineDemo {
 
   public static void main(String[] args) {
@@ -7,6 +12,7 @@ public class PipelineDemo {
         new Pipeline<>(new RemoveAlphabetsHandler())
             .addHandler(new RemoveDigitsHandler())
             .addHandler(new ConvertToCharArrayHandler());
-    filters.execute("GoYankees123!");
+
+    LOGGER.info(Arrays.toString(filters.execute("GoYankees123!")));
   }
 }

@@ -18,7 +18,8 @@ public class RemoveDigitsHandler implements Handler<String, String> {
 
     final String inputWithoutDigitsStr = inputWithoutDigits.toString();
     LOGGER.info("Current handler: {}, input is {} of type {}, output is {}, of type {}",
-        RemoveDigitsHandler.class, input, String.class, inputWithoutDigitsStr, String.class);
+        RemoveDigitsHandler.class.getSimpleName(), input, String.class.getSimpleName(), inputWithoutDigitsStr,
+        String.class.getSimpleName());
 
     return inputWithoutDigitsStr;
 
