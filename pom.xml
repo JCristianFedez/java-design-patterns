@@ -143,6 +143,7 @@
     <module>src/partial-response</module>
     <module>src/pipeline</module>
     <module>src/poison-pill</module>
+    <module>src/presentation-model</module>
   </modules>
   <packaging>pom</packaging>
 
