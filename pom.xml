@@ -142,6 +142,7 @@
     <module>src/parameter-object</module>
     <module>src/partial-response</module>
     <module>src/pipeline</module>
+    <module>src/poison-pill</module>
   </modules>
   <packaging>pom</packaging>
 
