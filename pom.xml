@@ -145,6 +145,7 @@
     <module>src/poison-pill</module>
     <module>src/presentation-model</module>
     <module>src/priority-queue</module>
+    <module>src/private-class-data</module>
   </modules>
   <packaging>pom</packaging>
 
