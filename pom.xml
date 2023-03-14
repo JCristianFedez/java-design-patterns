@@ -146,6 +146,7 @@
     <module>src/presentation-model</module>
     <module>src/priority-queue</module>
     <module>src/private-class-data</module>
+    <module>src/producer-consumer</module>
   </modules>
   <packaging>pom</packaging>
 
