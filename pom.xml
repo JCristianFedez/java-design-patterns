@@ -147,6 +147,7 @@
     <module>src/priority-queue</module>
     <module>src/private-class-data</module>
     <module>src/producer-consumer</module>
+    <module>src/promise</module>
   </modules>
   <packaging>pom</packaging>
 
