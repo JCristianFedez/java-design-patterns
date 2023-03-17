@@ -148,6 +148,7 @@
     <module>src/private-class-data</module>
     <module>src/producer-consumer</module>
     <module>src/promise</module>
+    <module>src/prototype/src/prototype-example-01</module>
   </modules>
   <packaging>pom</packaging>
 
