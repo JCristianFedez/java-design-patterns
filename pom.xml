@@ -149,6 +149,7 @@
     <module>src/producer-consumer</module>
     <module>src/promise</module>
     <module>src/prototype/src/prototype-example-01</module>
+    <module>src/prototype/src/prototype-example-02</module>
   </modules>
   <packaging>pom</packaging>
 
