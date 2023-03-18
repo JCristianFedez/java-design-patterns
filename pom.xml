@@ -156,6 +156,7 @@
     <module>src/reader-writer-lock</module>
     <module>src/registry</module>
     <module>src/resource-acquisition-is-initialization</module>
+    <module>src/retry</module>
   </modules>
   <packaging>pom</packaging>
 
