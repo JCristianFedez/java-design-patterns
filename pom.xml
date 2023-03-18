@@ -157,6 +157,7 @@
     <module>src/registry</module>
     <module>src/resource-acquisition-is-initialization</module>
     <module>src/retry</module>
+    <module>src/role-object</module>
   </modules>
   <packaging>pom</packaging>
 
