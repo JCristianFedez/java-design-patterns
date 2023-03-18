@@ -151,6 +151,7 @@
     <module>src/prototype/src/prototype-example-01</module>
     <module>src/prototype/src/prototype-example-02</module>
     <module>src/proxy/src/proxy-example-02</module>
+    <module>src/queue-load-leveling</module>
   </modules>
   <packaging>pom</packaging>
 
