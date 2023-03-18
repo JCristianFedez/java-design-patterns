@@ -153,6 +153,7 @@
     <module>src/proxy/src/proxy-example-02</module>
     <module>src/queue-load-leveling</module>
     <module>src/reactor</module>
+    <module>src/reader-writer-lock</module>
   </modules>
   <packaging>pom</packaging>
 
