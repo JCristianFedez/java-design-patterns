@@ -154,6 +154,7 @@
     <module>src/queue-load-leveling</module>
     <module>src/reactor</module>
     <module>src/reader-writer-lock</module>
+    <module>src/registry</module>
   </modules>
   <packaging>pom</packaging>
 
