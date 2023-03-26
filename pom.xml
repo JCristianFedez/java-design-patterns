@@ -158,6 +158,7 @@
     <module>src/resource-acquisition-is-initialization</module>
     <module>src/retry</module>
     <module>src/role-object</module>
+    <module>src/saga-orchestration</module>
   </modules>
   <packaging>pom</packaging>
 
