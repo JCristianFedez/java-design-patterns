@@ -159,6 +159,7 @@
     <module>src/retry</module>
     <module>src/role-object</module>
     <module>src/saga-orchestration</module>
+    <module>src/saga-choreography</module>
   </modules>
   <packaging>pom</packaging>
 
