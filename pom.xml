@@ -160,6 +160,7 @@
     <module>src/role-object</module>
     <module>src/saga-orchestration</module>
     <module>src/saga-choreography</module>
+    <module>src/separated-interface</module>
   </modules>
   <packaging>pom</packaging>
 
