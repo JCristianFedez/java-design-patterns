@@ -161,6 +161,7 @@
     <module>src/saga-orchestration</module>
     <module>src/saga-choreography</module>
     <module>src/separated-interface</module>
+    <module>src/servant</module>
   </modules>
   <packaging>pom</packaging>
 
