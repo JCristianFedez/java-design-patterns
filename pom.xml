@@ -162,6 +162,7 @@
     <module>src/saga-choreography</module>
     <module>src/separated-interface</module>
     <module>src/servant</module>
+    <module>src/service-locator</module>
   </modules>
   <packaging>pom</packaging>
 
