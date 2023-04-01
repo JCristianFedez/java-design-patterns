@@ -163,6 +163,7 @@
     <module>src/separated-interface</module>
     <module>src/servant</module>
     <module>src/service-locator</module>
+    <module>src/service-to-worker</module>
   </modules>
   <packaging>pom</packaging>
 
