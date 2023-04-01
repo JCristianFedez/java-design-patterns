@@ -164,6 +164,7 @@
     <module>src/servant</module>
     <module>src/service-locator</module>
     <module>src/service-to-worker</module>
+    <module>src/sharding</module>
   </modules>
   <packaging>pom</packaging>
 
