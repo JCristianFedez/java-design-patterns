@@ -166,6 +166,7 @@
     <module>src/service-to-worker</module>
     <module>src/sharding</module>
     <module>src/singleton/src/singleton-example-01</module>
+    <module>src/singleton/src/singleton-example-02</module>
   </modules>
   <packaging>pom</packaging>
 
