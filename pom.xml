@@ -167,6 +167,7 @@
     <module>src/sharding</module>
     <module>src/singleton/src/singleton-example-01</module>
     <module>src/singleton/src/singleton-example-02</module>
+    <module>src/spatial-partition</module>
   </modules>
   <packaging>pom</packaging>
 
