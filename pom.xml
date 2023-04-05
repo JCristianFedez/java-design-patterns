@@ -169,6 +169,7 @@
     <module>src/singleton/src/singleton-example-02</module>
     <module>src/spatial-partition</module>
     <module>src/special-case</module>
+    <module>src/state/src/state-demo-01</module>
   </modules>
   <packaging>pom</packaging>
 
