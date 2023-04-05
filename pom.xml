@@ -170,6 +170,7 @@
     <module>src/spatial-partition</module>
     <module>src/special-case</module>
     <module>src/state/src/state-demo-01</module>
+    <module>src/state/src/state-demo-02</module>
   </modules>
   <packaging>pom</packaging>
 
