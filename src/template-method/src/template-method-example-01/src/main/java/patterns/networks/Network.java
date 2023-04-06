@@ -1,4 +1,4 @@
-package com.cristian.design.patterns.networks;
+package patterns.networks;
 
 public abstract class Network {
 
