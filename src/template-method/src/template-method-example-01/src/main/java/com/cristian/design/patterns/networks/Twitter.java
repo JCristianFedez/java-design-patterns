@@ -1,4 +1,4 @@
-package patterns.networks;
+package com.cristian.design.patterns.networks;
 
 import java.util.Collections;
 

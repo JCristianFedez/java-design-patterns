@@ -1,10 +1,10 @@
-package patterns;
+package com.cristian.design.patterns;
 
 import java.util.Scanner;
 
-import patterns.networks.Facebook;
-import patterns.networks.Network;
-import patterns.networks.Twitter;
+import com.cristian.design.patterns.networks.Facebook;
+import com.cristian.design.patterns.networks.Network;
+import com.cristian.design.patterns.networks.Twitter;
 
 public class Demo {
 
