@@ -172,6 +172,7 @@
     <module>src/state/src/state-demo-01</module>
     <module>src/state/src/state-demo-02</module>
     <module>src/step-builder</module>
+    <module>src/strangler</module>
   </modules>
   <packaging>pom</packaging>
 
