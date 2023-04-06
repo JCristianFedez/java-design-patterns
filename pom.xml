@@ -180,6 +180,7 @@
     <module>src/template-method/src/template-method-example-02</module>
     <module>src/thread-local-storage</module>
     <module>src/thread-pool</module>
+    <module>src/throttling</module>
   </modules>
   <packaging>pom</packaging>
 
