@@ -178,6 +178,7 @@
     <module>src/subclass-sandbox</module>
     <module>src/template-method/src/template-method-example-01</module>
     <module>src/template-method/src/template-method-example-02</module>
+    <module>src/thread-local-storage</module>
   </modules>
   <packaging>pom</packaging>
 
