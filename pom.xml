@@ -175,6 +175,7 @@
     <module>src/strangler</module>
     <module>src/strategy/src/strategy-example-01</module>
     <module>src/strategy/src/strategy-example-02</module>
+    <module>src/subclass-sandbox</module>
   </modules>
   <packaging>pom</packaging>
 
