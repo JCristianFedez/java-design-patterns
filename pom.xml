@@ -183,6 +183,7 @@
     <module>src/throttling</module>
     <module>src/tolerant-reader</module>
     <module>src/trampoline</module>
+    <module>src/twin</module>
   </modules>
   <packaging>pom</packaging>
 
