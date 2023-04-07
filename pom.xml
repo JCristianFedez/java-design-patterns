@@ -184,6 +184,7 @@
     <module>src/tolerant-reader</module>
     <module>src/trampoline</module>
     <module>src/twin</module>
+    <module>src/unit-of-work</module>
   </modules>
   <packaging>pom</packaging>
 
