@@ -182,6 +182,7 @@
     <module>src/thread-pool</module>
     <module>src/throttling</module>
     <module>src/tolerant-reader</module>
+    <module>src/trampoline</module>
   </modules>
   <packaging>pom</packaging>
 
