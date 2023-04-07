@@ -185,6 +185,7 @@
     <module>src/trampoline</module>
     <module>src/twin</module>
     <module>src/unit-of-work</module>
+    <module>src/update-method</module>
   </modules>
   <packaging>pom</packaging>
 
