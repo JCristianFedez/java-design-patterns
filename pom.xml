@@ -186,6 +186,7 @@
     <module>src/twin</module>
     <module>src/unit-of-work</module>
     <module>src/update-method</module>
+    <module>src/visitor/src/visitor-example-01</module>
   </modules>
   <packaging>pom</packaging>
 
