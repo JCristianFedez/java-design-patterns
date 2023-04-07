@@ -181,6 +181,7 @@
     <module>src/thread-local-storage</module>
     <module>src/thread-pool</module>
     <module>src/throttling</module>
+    <module>src/tolerant-reader</module>
   </modules>
   <packaging>pom</packaging>
 
