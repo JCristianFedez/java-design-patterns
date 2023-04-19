@@ -14,8 +14,8 @@
 
   <modelVersion>4.0.0</modelVersion>
   <modules>
-    <module>src/facade-example-02</module>
-    <module>src/facade-example-01</module>
+    <module>facade-example-02</module>
+    <module>facade-example-01</module>
   </modules>
   <packaging>pom</packaging>
 

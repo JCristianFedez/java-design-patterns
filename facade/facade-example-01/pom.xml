@@ -2,29 +2,16 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <artifactId>factory</artifactId>
-  <dependencies>
-    <dependency>
-      <artifactId>commons</artifactId>
-      <groupId>org.example</groupId>
-      <scope>compile</scope>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
-  </dependencies>
-
+  <artifactId>facade-example-01</artifactId>
   <modelVersion>4.0.0</modelVersion>
-  <modules>
-    <module>factory-example01</module>
-    <module>factory-example-02</module>
-  </modules>
-  <packaging>pom</packaging>
 
   <parent>
-    <artifactId>design-patterns</artifactId>
+    <artifactId>facade</artifactId>
     <groupId>org.example</groupId>
     <relativePath>../pom.xml</relativePath>
     <version>1.0-SNAPSHOT</version>
   </parent>
+
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>

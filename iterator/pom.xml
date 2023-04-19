@@ -5,8 +5,8 @@
   <artifactId>iterator</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>src/iterator-example-01</module>
-    <module>src/iterator-example-02</module>
+    <module>iterator-example-01</module>
+    <module>iterator-example-02</module>
   </modules>
   <dependencies>
     <dependency>
