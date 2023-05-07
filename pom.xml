@@ -189,6 +189,7 @@
     <module>update-method</module>
     <module>visitor/visitor-example-01</module>
     <module>visitor/visitor-example-02</module>
+    <module>cqrs</module>
   </modules>
   <packaging>pom</packaging>
 
