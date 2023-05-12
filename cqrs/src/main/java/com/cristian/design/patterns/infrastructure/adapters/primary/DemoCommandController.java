@@ -1,5 +1,7 @@
 package com.cristian.design.patterns.infrastructure.adapters.primary;
 
+import java.util.concurrent.CompletableFuture;
+
 import com.cristian.design.patterns.application.buses.commands.CommandBus;
 import com.cristian.design.patterns.application.commands.WizardCastSpellCommand;
 import com.cristian.design.patterns.application.requests.WizardCastSpellRequest;
@@ -12,9 +14,9 @@ public final class DemoCommandController {
     this.commandBus = commandBus;
   }
 
-  public void castSpell(final WizardCastSpellRequest request) {
+  public CompletableFuture<Void> castSpell(final WizardCastSpellRequest request) {
     final WizardCastSpellCommand command = new WizardCastSpellCommand(request.id(), request.spell());
-    this.commandBus.dispatch(command);
+    return this.commandBus.dispatch(command);
   }
 
 }

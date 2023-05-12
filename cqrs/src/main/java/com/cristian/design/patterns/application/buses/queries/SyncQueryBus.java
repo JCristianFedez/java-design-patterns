@@ -6,7 +6,7 @@ import java.util.Map;
 import com.cristian.design.patterns.application.handler.query.QueryHandler;
 import com.cristian.design.patterns.domain.Query;
 
-public final class SyncQueryBus implements QueryBus {
+public final class SyncQueryBus implements QueryBus<String> {
 
   private final Map<Class<? extends Query>, QueryHandler<? extends Query>> queryHandlers = new HashMap<>();
 

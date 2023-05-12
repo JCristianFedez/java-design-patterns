@@ -3,9 +3,9 @@ package com.cristian.design.patterns.application.buses.queries;
 import com.cristian.design.patterns.application.handler.query.QueryHandler;
 import com.cristian.design.patterns.domain.Query;
 
-public interface QueryBus {
+public interface QueryBus<R> {
 
-  String dispatch(Query query);
+  R dispatch(Query query);
 
   void registrarse(Class<? extends Query> query, QueryHandler<? extends Query> handler);
 
