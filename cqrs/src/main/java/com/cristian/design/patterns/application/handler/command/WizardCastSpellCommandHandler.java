@@ -3,8 +3,8 @@ package com.cristian.design.patterns.application.handler.command;
 import com.cristian.design.patterns.application.actions.SpellCaster;
 import com.cristian.design.patterns.application.commands.WizardCastSpellCommand;
 import com.cristian.design.patterns.domain.Repository;
-import com.cristian.design.patterns.domain.vo.SpellName;
-import com.cristian.design.patterns.domain.vo.WizardId;
+import com.cristian.design.patterns.domain.valueobjects.SpellName;
+import com.cristian.design.patterns.domain.valueobjects.WizardId;
 
 public final class WizardCastSpellCommandHandler implements CommandHandler<WizardCastSpellCommand> {
 

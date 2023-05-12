@@ -2,7 +2,7 @@ package com.cristian.design.patterns.application.actions;
 
 import com.cristian.design.patterns.domain.Repository;
 import com.cristian.design.patterns.domain.creatures.Wizard;
-import com.cristian.design.patterns.domain.vo.WizardId;
+import com.cristian.design.patterns.domain.valueobjects.WizardId;
 
 import lombok.extern.slf4j.Slf4j;
 

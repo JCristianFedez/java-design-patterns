@@ -5,7 +5,7 @@ import com.cristian.design.patterns.application.queries.FindWizardQuery;
 import com.cristian.design.patterns.application.response.FindWizardResponse;
 import com.cristian.design.patterns.domain.Repository;
 import com.cristian.design.patterns.domain.creatures.Wizard;
-import com.cristian.design.patterns.domain.vo.WizardId;
+import com.cristian.design.patterns.domain.valueobjects.WizardId;
 import com.cristian.design.patterns.infrastructure.utils.JsonMapper;
 
 public class FindWizardQueryHandler implements QueryHandler<FindWizardQuery> {
