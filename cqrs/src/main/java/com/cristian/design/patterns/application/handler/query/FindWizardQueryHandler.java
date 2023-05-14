@@ -6,9 +6,8 @@ import com.cristian.design.patterns.application.response.FindWizardResponse;
 import com.cristian.design.patterns.domain.Repository;
 import com.cristian.design.patterns.domain.creatures.Wizard;
 import com.cristian.design.patterns.domain.valueobjects.WizardId;
-import com.cristian.design.patterns.infrastructure.utils.JsonMapper;
 
-public class FindWizardQueryHandler implements QueryHandler<FindWizardQuery> {
+public class FindWizardQueryHandler implements QueryHandler<FindWizardResponse, FindWizardQuery> {
 
   private final Repository repository;
 
@@ -17,9 +16,9 @@ public class FindWizardQueryHandler implements QueryHandler<FindWizardQuery> {
   }
 
   @Override
-  public String handle(final FindWizardQuery query) {
+  public FindWizardResponse handle(final FindWizardQuery query) {
     final Wizard wizard = new FindWizard(new WizardId(query.id()), this.repository).execute();
-    return JsonMapper.serialize(new FindWizardResponse(wizard.id(), wizard.name()));
+    return new FindWizardResponse(wizard.id(), wizard.name());
   }
 
 }

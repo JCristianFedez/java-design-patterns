@@ -2,7 +2,7 @@ package com.cristian.design.patterns.application.handler.query;
 
 import com.cristian.design.patterns.domain.Query;
 
-public interface QueryHandler<Q extends Query> {
+public interface QueryHandler<R, Q extends Query> {
 
-  String handle(Q query);
+  R handle(Q query);
 }

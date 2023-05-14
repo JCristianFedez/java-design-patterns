@@ -2,17 +2,16 @@ package com.cristian.design.patterns.application.buses.commands;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.CompletableFuture;
 
 import com.cristian.design.patterns.application.handler.command.CommandHandler;
 import com.cristian.design.patterns.domain.Command;
 
-public final class SyncCommandBus implements CommandBus {
+public final class CommandBusImpl implements CommandBus {
 
   private final Map<Class<? extends Command>, CommandHandler<? extends Command>> commandHandlers = new HashMap<>();
 
   @Override
-  public CompletableFuture<Void> dispatch(final Command command) {
+  public void dispatch(final Command command) {
     final CommandHandler<Command> handler = (CommandHandler<Command>) this.commandHandlers.get(command.getClass());
 
     if (handler == null) {
@@ -20,7 +19,6 @@ public final class SyncCommandBus implements CommandBus {
     }
 
     handler.handle(command);
-    return CompletableFuture.completedFuture(null);
   }
 
   @Override
