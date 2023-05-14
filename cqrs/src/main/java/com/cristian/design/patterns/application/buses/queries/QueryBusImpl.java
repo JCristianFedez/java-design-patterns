@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.cristian.design.patterns.application.handler.query.QueryHandler;
+import com.cristian.design.patterns.application.response.Response;
 import com.cristian.design.patterns.domain.Query;
 
 public final class QueryBusImpl implements QueryBus {
@@ -11,7 +12,7 @@ public final class QueryBusImpl implements QueryBus {
   private final Map<Class<? extends Query>, QueryHandler<?, ? extends Query>> queryHandlers = new HashMap<>();
 
   @Override
-  public <R> R dispatch(final Query query) {
+  public <R extends Response> R dispatch(final Query query) {
     final QueryHandler<R, Query> handler = (QueryHandler<R, Query>) this.queryHandlers.get(query.getClass());
 
     if (handler == null) {

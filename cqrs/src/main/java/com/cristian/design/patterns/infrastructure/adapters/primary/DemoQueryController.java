@@ -7,6 +7,7 @@ import com.cristian.design.patterns.application.buses.queries.QueryBus;
 import com.cristian.design.patterns.application.queries.FindWizardQuery;
 import com.cristian.design.patterns.application.requests.FindWizardRequest;
 import com.cristian.design.patterns.application.response.FindWizardResponse;
+import com.cristian.design.patterns.application.response.Response;
 
 public final class DemoQueryController {
 
@@ -26,7 +27,7 @@ public final class DemoQueryController {
     return future;
   }
 
-  private <R> R findWizard(final FindWizardRequest request) {
+  private <R extends Response> R findWizard(final FindWizardRequest request) {
     final FindWizardQuery query = new FindWizardQuery(request.id());
     return this.queryBus.dispatch(query);
   }
